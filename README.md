@@ -1,2 +1,6 @@
-# CEPatchDinosauria
-Dinosauria + Combat Extended Patch (b18)
+Patch for Dinosauria + Combat Extended (Rimworld).
+
+Load order:
+Combat Extended
+Dinosauria
+CEPatchDinosauria

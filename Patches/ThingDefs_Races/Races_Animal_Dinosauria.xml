@@ -1,0 +1,1340 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+  <!-- ========== TyrannosaurusRex ========== -->
+
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>*/ThingDef[defName="TyrannosaurusRex"]</xpath>
+    <value>
+      <li Class="CombatExtended.RacePropertiesExtensionCE">
+        <bodyShape>Quadruped</bodyShape>
+      </li>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>*/ThingDef[defName="TyrannosaurusRex"]/statBases</xpath>
+	<value>
+		<MeleeDodgeChance>0.2</MeleeDodgeChance>
+		<MeleeCritChance>0.5</MeleeCritChance>
+	</value>
+  </Operation>
+
+  <Operation Class="PatchOperationAttributeSet">
+    <xpath>*/ThingDef[defName="TyrannosaurusRex"]/tools/li</xpath>
+    <attribute>Class</attribute>
+    <value>CombatExtended.ToolCE</value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>*/ThingDef[defName="TyrannosaurusRex"]/tools/li[linkedBodyPartsGroup="LeftLeg"]</xpath>
+    <value>
+	<armorPenetration>0.17</armorPenetration>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>*/ThingDef[defName="TyrannosaurusRex"]/tools/li[linkedBodyPartsGroup="RightLeg"]</xpath>
+    <value>
+	<armorPenetration>0.17</armorPenetration>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>*/ThingDef[defName="TyrannosaurusRex"]/tools/li[linkedBodyPartsGroup="Teeth"]</xpath>
+    <value>
+	<armorPenetration>0.25</armorPenetration>
+    </value>
+  </Operation>
+
+
+  <!-- ========== Yutyrannus ========== -->
+
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>*/ThingDef[defName="Yutyrannus"]</xpath>
+    <value>
+      <li Class="CombatExtended.RacePropertiesExtensionCE">
+        <bodyShape>Quadruped</bodyShape>
+      </li>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>*/ThingDef[defName="Yutyrannus"]/statBases</xpath>
+	<value>
+		<MeleeDodgeChance>0.2</MeleeDodgeChance>
+		<MeleeCritChance>0.5</MeleeCritChance>
+	</value>
+  </Operation>
+
+  <Operation Class="PatchOperationAttributeSet">
+    <xpath>*/ThingDef[defName="Yutyrannus"]/tools/li</xpath>
+    <attribute>Class</attribute>
+    <value>CombatExtended.ToolCE</value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>*/ThingDef[defName="Yutyrannus"]/tools/li[linkedBodyPartsGroup="LeftLeg"]</xpath>
+    <value>
+	<armorPenetration>0.17</armorPenetration>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>*/ThingDef[defName="Yutyrannus"]/tools/li[linkedBodyPartsGroup="RightLeg"]</xpath>
+    <value>
+	<armorPenetration>0.17</armorPenetration>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>*/ThingDef[defName="Yutyrannus"]/tools/li[linkedBodyPartsGroup="Teeth"]</xpath>
+    <value>
+	<armorPenetration>0.25</armorPenetration>
+    </value>
+  </Operation>
+
+
+  <!-- ========== Carnotaurus ========== -->
+
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>*/ThingDef[defName="Carnotaurus"]</xpath>
+    <value>
+      <li Class="CombatExtended.RacePropertiesExtensionCE">
+        <bodyShape>Quadruped</bodyShape>
+      </li>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>*/ThingDef[defName="Carnotaurus"]/statBases</xpath>
+	<value>
+		<MeleeDodgeChance>0.2</MeleeDodgeChance>
+		<MeleeCritChance>0.5</MeleeCritChance>
+	</value>
+  </Operation>
+
+  <Operation Class="PatchOperationAttributeSet">
+    <xpath>*/ThingDef[defName="Carnotaurus"]/tools/li</xpath>
+    <attribute>Class</attribute>
+    <value>CombatExtended.ToolCE</value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>*/ThingDef[defName="Carnotaurus"]/tools/li[linkedBodyPartsGroup="LeftLeg"]</xpath>
+    <value>
+	<armorPenetration>0.17</armorPenetration>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>*/ThingDef[defName="Carnotaurus"]/tools/li[linkedBodyPartsGroup="RightLeg"]</xpath>
+    <value>
+	<armorPenetration>0.17</armorPenetration>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>*/ThingDef[defName="Carnotaurus"]/tools/li[linkedBodyPartsGroup="Teeth"]</xpath>
+    <value>
+	<armorPenetration>0.25</armorPenetration>
+    </value>
+  </Operation>
+
+
+  <!-- ========== Allosaurus ========== -->
+
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>*/ThingDef[defName="Allosaurus"]</xpath>
+    <value>
+      <li Class="CombatExtended.RacePropertiesExtensionCE">
+        <bodyShape>Quadruped</bodyShape>
+      </li>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>*/ThingDef[defName="Allosaurus"]/statBases</xpath>
+	<value>
+		<MeleeDodgeChance>0.2</MeleeDodgeChance>
+		<MeleeCritChance>0.5</MeleeCritChance>
+	</value>
+  </Operation>
+
+  <Operation Class="PatchOperationAttributeSet">
+    <xpath>*/ThingDef[defName="Allosaurus"]/tools/li</xpath>
+    <attribute>Class</attribute>
+    <value>CombatExtended.ToolCE</value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>*/ThingDef[defName="Allosaurus"]/tools/li[linkedBodyPartsGroup="LeftLeg"]</xpath>
+    <value>
+	<armorPenetration>0.17</armorPenetration>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>*/ThingDef[defName="Allosaurus"]/tools/li[linkedBodyPartsGroup="RightLeg"]</xpath>
+    <value>
+	<armorPenetration>0.17</armorPenetration>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>*/ThingDef[defName="Allosaurus"]/tools/li[linkedBodyPartsGroup="Teeth"]</xpath>
+    <value>
+	<armorPenetration>0.25</armorPenetration>
+    </value>
+  </Operation>
+
+
+  <!-- ========== Spinosaurus ========== -->
+
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>*/ThingDef[defName="Spinosaurus"]</xpath>
+    <value>
+      <li Class="CombatExtended.RacePropertiesExtensionCE">
+        <bodyShape>Quadruped</bodyShape>
+      </li>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>*/ThingDef[defName="Spinosaurus"]/statBases</xpath>
+	<value>
+		<MeleeDodgeChance>0.2</MeleeDodgeChance>
+		<MeleeCritChance>0.5</MeleeCritChance>
+	</value>
+  </Operation>
+
+  <Operation Class="PatchOperationAttributeSet">
+    <xpath>*/ThingDef[defName="Spinosaurus"]/tools/li</xpath>
+    <attribute>Class</attribute>
+    <value>CombatExtended.ToolCE</value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>*/ThingDef[defName="Spinosaurus"]/tools/li[linkedBodyPartsGroup="LeftLeg"]</xpath>
+    <value>
+	<armorPenetration>0.17</armorPenetration>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>*/ThingDef[defName="Spinosaurus"]/tools/li[linkedBodyPartsGroup="RightLeg"]</xpath>
+    <value>
+	<armorPenetration>0.17</armorPenetration>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>*/ThingDef[defName="Spinosaurus"]/tools/li[linkedBodyPartsGroup="Teeth"]</xpath>
+    <value>
+	<armorPenetration>0.25</armorPenetration>
+    </value>
+  </Operation>
+
+
+  <!-- ========== Baryonyx ========== -->
+
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>*/ThingDef[defName="Baryonyx"]</xpath>
+    <value>
+      <li Class="CombatExtended.RacePropertiesExtensionCE">
+        <bodyShape>Quadruped</bodyShape>
+      </li>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>*/ThingDef[defName="Baryonyx"]/statBases</xpath>
+	<value>
+		<MeleeDodgeChance>0.1</MeleeDodgeChance>
+		<MeleeCritChance>0.4</MeleeCritChance>
+	</value>
+  </Operation>
+
+  <Operation Class="PatchOperationAttributeSet">
+    <xpath>*/ThingDef[defName="Baryonyx"]/tools/li</xpath>
+    <attribute>Class</attribute>
+    <value>CombatExtended.ToolCE</value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>*/ThingDef[defName="Baryonyx"]/tools/li[linkedBodyPartsGroup="LeftLeg"]</xpath>
+    <value>
+	<armorPenetration>0.17</armorPenetration>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>*/ThingDef[defName="Baryonyx"]/tools/li[linkedBodyPartsGroup="RightLeg"]</xpath>
+    <value>
+	<armorPenetration>0.17</armorPenetration>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>*/ThingDef[defName="Baryonyx"]/tools/li[linkedBodyPartsGroup="Teeth"]</xpath>
+    <value>
+	<armorPenetration>0.25</armorPenetration>
+    </value>
+  </Operation>
+
+
+  <!-- ========== Ankylosaurus ========== -->
+
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>*/ThingDef[defName="Ankylosaurus"]</xpath>
+    <value>
+      <li Class="CombatExtended.RacePropertiesExtensionCE">
+        <bodyShape>Quadruped</bodyShape>
+      </li>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>*/ThingDef[defName="Ankylosaurus"]/statBases</xpath>
+	<value>
+		<MeleeDodgeChance>0.3</MeleeDodgeChance>
+		<MeleeCritChance>0.4</MeleeCritChance>
+	</value>
+  </Operation>
+
+  <Operation Class="PatchOperationAttributeSet">
+    <xpath>*/ThingDef[defName="Ankylosaurus"]/tools/li</xpath>
+    <attribute>Class</attribute>
+    <value>CombatExtended.ToolCE</value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>*/ThingDef[defName="Ankylosaurus"]/tools/li[linkedBodyPartsGroup="TailAttackTool"]</xpath>
+    <value>
+	<armorPenetration>0.17</armorPenetration>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>*/ThingDef[defName="Ankylosaurus"]/tools/li[linkedBodyPartsGroup="HeadAttackTool"]</xpath>
+    <value>
+	<armorPenetration>0.133</armorPenetration>
+    </value>
+  </Operation>
+
+
+  <!-- ========== Minmi ========== -->
+
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>*/ThingDef[defName="Minmi"]</xpath>
+    <value>
+      <li Class="CombatExtended.RacePropertiesExtensionCE">
+        <bodyShape>Quadruped</bodyShape>
+      </li>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>*/ThingDef[defName="Minmi"]/statBases</xpath>
+	<value>
+		<MeleeDodgeChance>0.3</MeleeDodgeChance>
+		<MeleeCritChance>0.4</MeleeCritChance>
+	</value>
+  </Operation>
+
+  <Operation Class="PatchOperationAttributeSet">
+    <xpath>*/ThingDef[defName="Minmi"]/tools/li</xpath>
+    <attribute>Class</attribute>
+    <value>CombatExtended.ToolCE</value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>*/ThingDef[defName="Minmi"]/tools/li[linkedBodyPartsGroup="TailAttackTool"]</xpath>
+    <value>
+	<armorPenetration>0.17</armorPenetration>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>*/ThingDef[defName="Minmi"]/tools/li[linkedBodyPartsGroup="HeadAttackTool"]</xpath>
+    <value>
+	<armorPenetration>0.133</armorPenetration>
+    </value>
+  </Operation>
+
+
+  <!-- ========== Brachiosaurus ========== -->
+
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>*/ThingDef[defName="Brachiosaurus"]</xpath>
+    <value>
+      <li Class="CombatExtended.RacePropertiesExtensionCE">
+        <bodyShape>Quadruped</bodyShape>
+      </li>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>*/ThingDef[defName="Brachiosaurus"]/statBases</xpath>
+	<value>
+		<MeleeDodgeChance>0.09</MeleeDodgeChance>
+		<MeleeCritChance>0.8</MeleeCritChance>
+	</value>
+  </Operation>
+
+  <Operation Class="PatchOperationAttributeSet">
+    <xpath>*/ThingDef[defName="Brachiosaurus"]/tools/li</xpath>
+    <attribute>Class</attribute>
+    <value>CombatExtended.ToolCE</value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>*/ThingDef[defName="Brachiosaurus"]/tools/li[linkedBodyPartsGroup="TailAttackTool"]</xpath>
+    <value>
+	<armorPenetration>0.17</armorPenetration>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>*/ThingDef[defName="Brachiosaurus"]/tools/li[linkedBodyPartsGroup="FrontLeftLeg"]</xpath>
+    <value>
+	<armorPenetration>0.17</armorPenetration>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>*/ThingDef[defName="Brachiosaurus"]/tools/li[linkedBodyPartsGroup="FrontRightLeg"]</xpath>
+    <value>
+	<armorPenetration>0.17</armorPenetration>
+    </value>
+  </Operation>
+
+
+  <!-- ========== Brontosaurus ========== -->
+
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>*/ThingDef[defName="Brontosaurus"]</xpath>
+    <value>
+      <li Class="CombatExtended.RacePropertiesExtensionCE">
+        <bodyShape>Quadruped</bodyShape>
+      </li>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>*/ThingDef[defName="Brontosaurus"]/statBases</xpath>
+	<value>
+		<MeleeDodgeChance>0.09</MeleeDodgeChance>
+		<MeleeCritChance>0.8</MeleeCritChance>
+	</value>
+  </Operation>
+
+  <Operation Class="PatchOperationAttributeSet">
+    <xpath>*/ThingDef[defName="Brontosaurus"]/tools/li</xpath>
+    <attribute>Class</attribute>
+    <value>CombatExtended.ToolCE</value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>*/ThingDef[defName="Brontosaurus"]/tools/li[linkedBodyPartsGroup="TailAttackTool"]</xpath>
+    <value>
+	<armorPenetration>0.17</armorPenetration>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>*/ThingDef[defName="Brontosaurus"]/tools/li[linkedBodyPartsGroup="FrontLeftLeg"]</xpath>
+    <value>
+	<armorPenetration>0.17</armorPenetration>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>*/ThingDef[defName="Brontosaurus"]/tools/li[linkedBodyPartsGroup="FrontRightLeg"]</xpath>
+    <value>
+	<armorPenetration>0.17</armorPenetration>
+    </value>
+  </Operation>
+
+
+  <!-- ========== Diplodocus ========== -->
+
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>*/ThingDef[defName="Diplodocus"]</xpath>
+    <value>
+      <li Class="CombatExtended.RacePropertiesExtensionCE">
+        <bodyShape>Quadruped</bodyShape>
+      </li>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>*/ThingDef[defName="Diplodocus"]/statBases</xpath>
+	<value>
+		<MeleeDodgeChance>0.09</MeleeDodgeChance>
+		<MeleeCritChance>0.8</MeleeCritChance>
+	</value>
+  </Operation>
+
+  <Operation Class="PatchOperationAttributeSet">
+    <xpath>*/ThingDef[defName="Diplodocus"]/tools/li</xpath>
+    <attribute>Class</attribute>
+    <value>CombatExtended.ToolCE</value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>*/ThingDef[defName="Diplodocus"]/tools/li[linkedBodyPartsGroup="TailAttackTool"]</xpath>
+    <value>
+	<armorPenetration>0.17</armorPenetration>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>*/ThingDef[defName="Diplodocus"]/tools/li[linkedBodyPartsGroup="FrontLeftLeg"]</xpath>
+    <value>
+	<armorPenetration>0.17</armorPenetration>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>*/ThingDef[defName="Diplodocus"]/tools/li[linkedBodyPartsGroup="FrontRightLeg"]</xpath>
+    <value>
+	<armorPenetration>0.17</armorPenetration>
+    </value>
+  </Operation>
+
+
+  <!-- ========== Magyarosaurus ========== -->
+
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>*/ThingDef[defName="Magyarosaurus"]</xpath>
+    <value>
+      <li Class="CombatExtended.RacePropertiesExtensionCE">
+        <bodyShape>Quadruped</bodyShape>
+      </li>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>*/ThingDef[defName="Magyarosaurus"]/statBases</xpath>
+	<value>
+		<MeleeDodgeChance>0.29</MeleeDodgeChance>
+		<MeleeCritChance>0.22</MeleeCritChance>
+	</value>
+  </Operation>
+
+  <Operation Class="PatchOperationAttributeSet">
+    <xpath>*/ThingDef[defName="Magyarosaurus"]/tools/li</xpath>
+    <attribute>Class</attribute>
+    <value>CombatExtended.ToolCE</value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>*/ThingDef[defName="Magyarosaurus"]/tools/li[linkedBodyPartsGroup="TailAttackTool"]</xpath>
+    <value>
+	<armorPenetration>0.17</armorPenetration>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>*/ThingDef[defName="Magyarosaurus"]/tools/li[linkedBodyPartsGroup="FrontLeftLeg"]</xpath>
+    <value>
+	<armorPenetration>0.17</armorPenetration>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>*/ThingDef[defName="Magyarosaurus"]/tools/li[linkedBodyPartsGroup="FrontRightLeg"]</xpath>
+    <value>
+	<armorPenetration>0.17</armorPenetration>
+    </value>
+  </Operation>
+
+
+  <!-- ========== Utahraptor ========== -->
+
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>*/ThingDef[defName="Utahraptor"]</xpath>
+    <value>
+      <li Class="CombatExtended.RacePropertiesExtensionCE">
+        <bodyShape>Quadruped</bodyShape>
+      </li>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>*/ThingDef[defName="Utahraptor"]/statBases</xpath>
+	<value>
+		<MeleeDodgeChance>0.2</MeleeDodgeChance>
+		<MeleeCritChance>0.5</MeleeCritChance>
+	</value>
+  </Operation>
+
+  <Operation Class="PatchOperationAttributeSet">
+    <xpath>*/ThingDef[defName="Utahraptor"]/tools/li</xpath>
+    <attribute>Class</attribute>
+    <value>CombatExtended.ToolCE</value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>*/ThingDef[defName="Utahraptor"]/tools/li[linkedBodyPartsGroup="LeftLegClawAttackTool"]</xpath>
+    <value>
+	<armorPenetration>0.227</armorPenetration>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>*/ThingDef[defName="Utahraptor"]/tools/li[linkedBodyPartsGroup="RightLegClawAttackTool"]</xpath>
+    <value>
+	<armorPenetration>0.227</armorPenetration>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>*/ThingDef[defName="Utahraptor"]/tools/li[linkedBodyPartsGroup="Teeth"]</xpath>
+    <value>
+	<armorPenetration>0.25</armorPenetration>
+    </value>
+  </Operation>
+
+
+  <!-- ========== Dakotaraptor ========== -->
+
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>*/ThingDef[defName="Dakotaraptor"]</xpath>
+    <value>
+      <li Class="CombatExtended.RacePropertiesExtensionCE">
+        <bodyShape>Quadruped</bodyShape>
+      </li>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>*/ThingDef[defName="Dakotaraptor"]/statBases</xpath>
+	<value>
+		<MeleeDodgeChance>0.2</MeleeDodgeChance>
+		<MeleeCritChance>0.5</MeleeCritChance>
+	</value>
+  </Operation>
+
+  <Operation Class="PatchOperationAttributeSet">
+    <xpath>*/ThingDef[defName="Dakotaraptor"]/tools/li</xpath>
+    <attribute>Class</attribute>
+    <value>CombatExtended.ToolCE</value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>*/ThingDef[defName="Dakotaraptor"]/tools/li[linkedBodyPartsGroup="LeftLegClawAttackTool"]</xpath>
+    <value>
+	<armorPenetration>0.227</armorPenetration>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>*/ThingDef[defName="Dakotaraptor"]/tools/li[linkedBodyPartsGroup="RightLegClawAttackTool"]</xpath>
+    <value>
+	<armorPenetration>0.227</armorPenetration>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>*/ThingDef[defName="Dakotaraptor"]/tools/li[linkedBodyPartsGroup="Teeth"]</xpath>
+    <value>
+	<armorPenetration>0.25</armorPenetration>
+    </value>
+  </Operation>
+
+
+  <!-- ========== Dilophosaurus ========== -->
+
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>*/ThingDef[defName="Dilophosaurus"]</xpath>
+    <value>
+      <li Class="CombatExtended.RacePropertiesExtensionCE">
+        <bodyShape>Quadruped</bodyShape>
+      </li>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>*/ThingDef[defName="Dilophosaurus"]/statBases</xpath>
+	<value>
+		<MeleeDodgeChance>0.2</MeleeDodgeChance>
+		<MeleeCritChance>0.5</MeleeCritChance>
+	</value>
+  </Operation>
+
+  <Operation Class="PatchOperationAttributeSet">
+    <xpath>*/ThingDef[defName="Dilophosaurus"]/tools/li</xpath>
+    <attribute>Class</attribute>
+    <value>CombatExtended.ToolCE</value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>*/ThingDef[defName="Dilophosaurus"]/tools/li[linkedBodyPartsGroup="LeftLegClawAttackTool"]</xpath>
+    <value>
+	<armorPenetration>0.227</armorPenetration>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>*/ThingDef[defName="Dilophosaurus"]/tools/li[linkedBodyPartsGroup="RightLegClawAttackTool"]</xpath>
+    <value>
+	<armorPenetration>0.227</armorPenetration>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>*/ThingDef[defName="Dilophosaurus"]/tools/li[linkedBodyPartsGroup="Teeth"]</xpath>
+    <value>
+	<armorPenetration>0.25</armorPenetration>
+    </value>
+  </Operation>
+
+
+  <!-- ========== Velociraptor ========== -->
+
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>*/ThingDef[defName="Velociraptor"]</xpath>
+    <value>
+      <li Class="CombatExtended.RacePropertiesExtensionCE">
+        <bodyShape>Quadruped</bodyShape>
+      </li>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>*/ThingDef[defName="Velociraptor"]/statBases</xpath>
+	<value>
+		<MeleeDodgeChance>0.29</MeleeDodgeChance>
+		<MeleeCritChance>0.4</MeleeCritChance>
+	</value>
+  </Operation>
+
+  <Operation Class="PatchOperationAttributeSet">
+    <xpath>*/ThingDef[defName="Velociraptor"]/tools/li</xpath>
+    <attribute>Class</attribute>
+    <value>CombatExtended.ToolCE</value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>*/ThingDef[defName="Velociraptor"]/tools/li[linkedBodyPartsGroup="LeftLegClawAttackTool"]</xpath>
+    <value>
+	<armorPenetration>0.227</armorPenetration>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>*/ThingDef[defName="Velociraptor"]/tools/li[linkedBodyPartsGroup="RightLegClawAttackTool"]</xpath>
+    <value>
+	<armorPenetration>0.227</armorPenetration>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>*/ThingDef[defName="Velociraptor"]/tools/li[linkedBodyPartsGroup="Teeth"]</xpath>
+    <value>
+	<armorPenetration>0.25</armorPenetration>
+    </value>
+  </Operation>
+
+
+  <!-- ========== Compsognathus ========== -->
+
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>*/ThingDef[defName="Compsognathus"]</xpath>
+    <value>
+      <li Class="CombatExtended.RacePropertiesExtensionCE">
+        <bodyShape>Quadruped</bodyShape>
+      </li>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>*/ThingDef[defName="Compsognathus"]/statBases</xpath>
+	<value>
+		<MeleeDodgeChance>0.29</MeleeDodgeChance>
+		<MeleeCritChance>0.4</MeleeCritChance>
+	</value>
+  </Operation>
+
+  <Operation Class="PatchOperationAttributeSet">
+    <xpath>*/ThingDef[defName="Compsognathus"]/tools/li</xpath>
+    <attribute>Class</attribute>
+    <value>CombatExtended.ToolCE</value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>*/ThingDef[defName="Compsognathus"]/tools/li[linkedBodyPartsGroup="LeftLegClawAttackTool"]</xpath>
+    <value>
+	<armorPenetration>0.227</armorPenetration>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>*/ThingDef[defName="Compsognathus"]/tools/li[linkedBodyPartsGroup="RightLegClawAttackTool"]</xpath>
+    <value>
+	<armorPenetration>0.227</armorPenetration>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>*/ThingDef[defName="Compsognathus"]/tools/li[linkedBodyPartsGroup="Teeth"]</xpath>
+    <value>
+	<armorPenetration>0.25</armorPenetration>
+    </value>
+  </Operation>
+
+
+  <!-- ========== Gallimimus ========== -->
+
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>*/ThingDef[defName="Gallimimus"]</xpath>
+    <value>
+      <li Class="CombatExtended.RacePropertiesExtensionCE">
+        <bodyShape>Quadruped</bodyShape>
+      </li>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>*/ThingDef[defName="Gallimimus"]/statBases</xpath>
+	<value>
+		<MeleeDodgeChance>0.29</MeleeDodgeChance>
+		<MeleeCritChance>0.22</MeleeCritChance>
+	</value>
+  </Operation>
+
+  <Operation Class="PatchOperationAttributeSet">
+    <xpath>*/ThingDef[defName="Gallimimus"]/tools/li</xpath>
+    <attribute>Class</attribute>
+    <value>CombatExtended.ToolCE</value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>*/ThingDef[defName="Gallimimus"]/tools/li[linkedBodyPartsGroup="LeftLeg"]</xpath>
+    <value>
+	<armorPenetration>0.17</armorPenetration>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>*/ThingDef[defName="Gallimimus"]/tools/li[linkedBodyPartsGroup="RightLeg"]</xpath>
+    <value>
+	<armorPenetration>0.17</armorPenetration>
+    </value>
+  </Operation>
+
+
+  <!-- ========== Gigantoraptor ========== -->
+
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>*/ThingDef[defName="Gigantoraptor"]</xpath>
+    <value>
+      <li Class="CombatExtended.RacePropertiesExtensionCE">
+        <bodyShape>Quadruped</bodyShape>
+      </li>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>*/ThingDef[defName="Gigantoraptor"]/statBases</xpath>
+	<value>
+		<MeleeDodgeChance>0.29</MeleeDodgeChance>
+		<MeleeCritChance>0.22</MeleeCritChance>
+	</value>
+  </Operation>
+
+  <Operation Class="PatchOperationAttributeSet">
+    <xpath>*/ThingDef[defName="Gigantoraptor"]/tools/li</xpath>
+    <attribute>Class</attribute>
+    <value>CombatExtended.ToolCE</value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>*/ThingDef[defName="Gigantoraptor"]/tools/li[linkedBodyPartsGroup="LeftLeg"]</xpath>
+    <value>
+	<armorPenetration>0.17</armorPenetration>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>*/ThingDef[defName="Gigantoraptor"]/tools/li[linkedBodyPartsGroup="RightLeg"]</xpath>
+    <value>
+	<armorPenetration>0.17</armorPenetration>
+    </value>
+  </Operation>
+
+
+  <!-- ========== Iguanodon ========== -->
+
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>*/ThingDef[defName="Iguanodon"]</xpath>
+    <value>
+      <li Class="CombatExtended.RacePropertiesExtensionCE">
+        <bodyShape>Quadruped</bodyShape>
+      </li>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>*/ThingDef[defName="Iguanodon"]/statBases</xpath>
+	<value>
+		<MeleeDodgeChance>0.29</MeleeDodgeChance>
+		<MeleeCritChance>0.22</MeleeCritChance>
+	</value>
+  </Operation>
+
+  <Operation Class="PatchOperationAttributeSet">
+    <xpath>*/ThingDef[defName="Iguanodon"]/tools/li</xpath>
+    <attribute>Class</attribute>
+    <value>CombatExtended.ToolCE</value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>*/ThingDef[defName="Iguanodon"]/tools/li[linkedBodyPartsGroup="HeadAttackTool"]</xpath>
+    <value>
+	<armorPenetration>0.133</armorPenetration>
+    </value>
+  </Operation>
+
+
+  <!-- ========== Parasaur ========== -->
+
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>*/ThingDef[defName="Parasaur"]</xpath>
+    <value>
+      <li Class="CombatExtended.RacePropertiesExtensionCE">
+        <bodyShape>Quadruped</bodyShape>
+      </li>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>*/ThingDef[defName="Parasaur"]/statBases</xpath>
+	<value>
+		<MeleeDodgeChance>0.29</MeleeDodgeChance>
+		<MeleeCritChance>0.22</MeleeCritChance>
+	</value>
+  </Operation>
+
+  <Operation Class="PatchOperationAttributeSet">
+    <xpath>*/ThingDef[defName="Parasaur"]/tools/li</xpath>
+    <attribute>Class</attribute>
+    <value>CombatExtended.ToolCE</value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>*/ThingDef[defName="Parasaur"]/tools/li[linkedBodyPartsGroup="HeadAttackTool"]</xpath>
+    <value>
+	<armorPenetration>0.133</armorPenetration>
+    </value>
+  </Operation>
+
+
+  <!-- ========== Corythosaurus ========== -->
+
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>*/ThingDef[defName="Corythosaurus"]</xpath>
+    <value>
+      <li Class="CombatExtended.RacePropertiesExtensionCE">
+        <bodyShape>Quadruped</bodyShape>
+      </li>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>*/ThingDef[defName="Corythosaurus"]/statBases</xpath>
+	<value>
+		<MeleeDodgeChance>0.29</MeleeDodgeChance>
+		<MeleeCritChance>0.22</MeleeCritChance>
+	</value>
+  </Operation>
+
+  <Operation Class="PatchOperationAttributeSet">
+    <xpath>*/ThingDef[defName="Corythosaurus"]/tools/li</xpath>
+    <attribute>Class</attribute>
+    <value>CombatExtended.ToolCE</value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>*/ThingDef[defName="Corythosaurus"]/tools/li[linkedBodyPartsGroup="HeadAttackTool"]</xpath>
+    <value>
+	<armorPenetration>0.133</armorPenetration>
+    </value>
+  </Operation>
+
+
+  <!-- ========== Deinocheirus ========== -->
+
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>*/ThingDef[defName="Deinocheirus"]</xpath>
+    <value>
+      <li Class="CombatExtended.RacePropertiesExtensionCE">
+        <bodyShape>Quadruped</bodyShape>
+      </li>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>*/ThingDef[defName="Deinocheirus"]/statBases</xpath>
+	<value>
+		<MeleeDodgeChance>0.1</MeleeDodgeChance>
+		<MeleeCritChance>0.4</MeleeCritChance>
+	</value>
+  </Operation>
+
+  <Operation Class="PatchOperationAttributeSet">
+    <xpath>*/ThingDef[defName="Deinocheirus"]/tools/li</xpath>
+    <attribute>Class</attribute>
+    <value>CombatExtended.ToolCE</value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>*/ThingDef[defName="Deinocheirus"]/tools/li[linkedBodyPartsGroup="LeftArmClawAttackTool"]</xpath>
+    <value>
+	<armorPenetration>0.227</armorPenetration>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>*/ThingDef[defName="Deinocheirus"]/tools/li[linkedBodyPartsGroup="RightArmClawAttackTool"]</xpath>
+    <value>
+	<armorPenetration>0.227</armorPenetration>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>*/ThingDef[defName="Deinocheirus"]/tools/li[linkedBodyPartsGroup="HeadAttackTool"]</xpath>
+    <value>
+	<armorPenetration>0.133</armorPenetration>
+    </value>
+  </Operation>
+
+
+  <!-- ========== Therizinosaurus ========== -->
+
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>*/ThingDef[defName="Therizinosaurus"]</xpath>
+    <value>
+      <li Class="CombatExtended.RacePropertiesExtensionCE">
+        <bodyShape>Quadruped</bodyShape>
+      </li>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>*/ThingDef[defName="Therizinosaurus"]/statBases</xpath>
+	<value>
+		<MeleeDodgeChance>0.1</MeleeDodgeChance>
+		<MeleeCritChance>0.4</MeleeCritChance>
+	</value>
+  </Operation>
+
+  <Operation Class="PatchOperationAttributeSet">
+    <xpath>*/ThingDef[defName="Therizinosaurus"]/tools/li</xpath>
+    <attribute>Class</attribute>
+    <value>CombatExtended.ToolCE</value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>*/ThingDef[defName="Therizinosaurus"]/tools/li[linkedBodyPartsGroup="LeftArmClawAttackTool"]</xpath>
+    <value>
+	<armorPenetration>0.227</armorPenetration>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>*/ThingDef[defName="Therizinosaurus"]/tools/li[linkedBodyPartsGroup="RightArmClawAttackTool"]</xpath>
+    <value>
+	<armorPenetration>0.227</armorPenetration>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>*/ThingDef[defName="Therizinosaurus"]/tools/li[linkedBodyPartsGroup="HeadAttackTool"]</xpath>
+    <value>
+	<armorPenetration>0.133</armorPenetration>
+    </value>
+  </Operation>
+
+
+  <!-- ========== Pachycephalosaurus ========== -->
+
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>*/ThingDef[defName="Pachycephalosaurus"]</xpath>
+    <value>
+      <li Class="CombatExtended.RacePropertiesExtensionCE">
+        <bodyShape>Quadruped</bodyShape>
+      </li>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>*/ThingDef[defName="Pachycephalosaurus"]/statBases</xpath>
+	<value>
+		<MeleeDodgeChance>0.3</MeleeDodgeChance>
+		<MeleeCritChance>0.4</MeleeCritChance>
+	</value>
+  </Operation>
+
+  <Operation Class="PatchOperationAttributeSet">
+    <xpath>*/ThingDef[defName="Pachycephalosaurus"]/tools/li</xpath>
+    <attribute>Class</attribute>
+    <value>CombatExtended.ToolCE</value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>*/ThingDef[defName="Pachycephalosaurus"]/tools/li[linkedBodyPartsGroup="HeadAttackTool"]</xpath>
+    <value>
+	<armorPenetration>0.133</armorPenetration>
+    </value>
+  </Operation>
+
+
+  <!-- ========== Stygimoloch ========== -->
+
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>*/ThingDef[defName="Stygimoloch"]</xpath>
+    <value>
+      <li Class="CombatExtended.RacePropertiesExtensionCE">
+        <bodyShape>Quadruped</bodyShape>
+      </li>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>*/ThingDef[defName="Stygimoloch"]/statBases</xpath>
+	<value>
+		<MeleeDodgeChance>0.3</MeleeDodgeChance>
+		<MeleeCritChance>0.4</MeleeCritChance>
+	</value>
+  </Operation>
+
+  <Operation Class="PatchOperationAttributeSet">
+    <xpath>*/ThingDef[defName="Stygimoloch"]/tools/li</xpath>
+    <attribute>Class</attribute>
+    <value>CombatExtended.ToolCE</value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>*/ThingDef[defName="Stygimoloch"]/tools/li[linkedBodyPartsGroup="HeadAttackTool"]</xpath>
+    <value>
+	<armorPenetration>0.133</armorPenetration>
+    </value>
+  </Operation>
+
+
+  <!-- ========== Dryosaurus ========== -->
+
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>*/ThingDef[defName="Dryosaurus"]</xpath>
+    <value>
+      <li Class="CombatExtended.RacePropertiesExtensionCE">
+        <bodyShape>Quadruped</bodyShape>
+      </li>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>*/ThingDef[defName="Dryosaurus"]/statBases</xpath>
+	<value>
+		<MeleeDodgeChance>0.45</MeleeDodgeChance>
+		<MeleeCritChance>0.15</MeleeCritChance>
+	</value>
+  </Operation>
+
+  <Operation Class="PatchOperationAttributeSet">
+    <xpath>*/ThingDef[defName="Dryosaurus"]/tools/li</xpath>
+    <attribute>Class</attribute>
+    <value>CombatExtended.ToolCE</value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>*/ThingDef[defName="Dryosaurus"]/tools/li[linkedBodyPartsGroup="HeadAttackTool"]</xpath>
+    <value>
+	<armorPenetration>0.133</armorPenetration>
+    </value>
+  </Operation>
+
+
+  <!-- ========== Stegosaurus ========== -->
+
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>*/ThingDef[defName="Stegosaurus"]</xpath>
+    <value>
+      <li Class="CombatExtended.RacePropertiesExtensionCE">
+        <bodyShape>Quadruped</bodyShape>
+      </li>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>*/ThingDef[defName="Stegosaurus"]/statBases</xpath>
+	<value>
+		<MeleeDodgeChance>0.3</MeleeDodgeChance>
+		<MeleeCritChance>0.4</MeleeCritChance>
+	</value>
+  </Operation>
+
+  <Operation Class="PatchOperationAttributeSet">
+    <xpath>*/ThingDef[defName="Stegosaurus"]/tools/li</xpath>
+    <attribute>Class</attribute>
+    <value>CombatExtended.ToolCE</value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>*/ThingDef[defName="Stegosaurus"]/tools/li[linkedBodyPartsGroup="TailAttackTool"]</xpath>
+    <value>
+	<armorPenetration>0.17</armorPenetration>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>*/ThingDef[defName="Stegosaurus"]/tools/li[linkedBodyPartsGroup="HeadAttackTool"]</xpath>
+    <value>
+	<armorPenetration>0.133</armorPenetration>
+    </value>
+  </Operation>
+
+
+  <!-- ========== Triceratops ========== -->
+
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>*/ThingDef[defName="Triceratops"]</xpath>
+    <value>
+      <li Class="CombatExtended.RacePropertiesExtensionCE">
+        <bodyShape>Quadruped</bodyShape>
+      </li>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>*/ThingDef[defName="Triceratops"]/statBases</xpath>
+	<value>
+		<MeleeDodgeChance>0.3</MeleeDodgeChance>
+		<MeleeCritChance>0.4</MeleeCritChance>
+	</value>
+  </Operation>
+
+  <Operation Class="PatchOperationAttributeSet">
+    <xpath>*/ThingDef[defName="Triceratops"]/tools/li</xpath>
+    <attribute>Class</attribute>
+    <value>CombatExtended.ToolCE</value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>*/ThingDef[defName="Triceratops"]/tools/li[linkedBodyPartsGroup="HornAttackTool"]</xpath>
+    <value>
+	<armorPenetration>0.457</armorPenetration>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>*/ThingDef[defName="Triceratops"]/tools/li[linkedBodyPartsGroup="HeadAttackTool"]</xpath>
+    <value>
+	<armorPenetration>0.133</armorPenetration>
+    </value>
+  </Operation>
+
+
+  <!-- ========== Protoceratops ========== -->
+
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>*/ThingDef[defName="Protoceratops"]</xpath>
+    <value>
+      <li Class="CombatExtended.RacePropertiesExtensionCE">
+        <bodyShape>Quadruped</bodyShape>
+      </li>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>*/ThingDef[defName="Protoceratops"]/statBases</xpath>
+	<value>
+		<MeleeDodgeChance>0.45</MeleeDodgeChance>
+		<MeleeCritChance>0.15</MeleeCritChance>
+	</value>
+  </Operation>
+
+  <Operation Class="PatchOperationAttributeSet">
+    <xpath>*/ThingDef[defName="Protoceratops"]/tools/li</xpath>
+    <attribute>Class</attribute>
+    <value>CombatExtended.ToolCE</value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>*/ThingDef[defName="Protoceratops"]/tools/li[linkedBodyPartsGroup="HeadAttackTool"]</xpath>
+    <value>
+	<armorPenetration>0.133</armorPenetration>
+    </value>
+  </Operation>
+
+
+  <!-- ========== Quetzalcoatlus ========== -->
+
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>*/ThingDef[defName="Quetzalcoatlus"]</xpath>
+    <value>
+      <li Class="CombatExtended.RacePropertiesExtensionCE">
+        <bodyShape>Quadruped</bodyShape>
+      </li>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>*/ThingDef[defName="Quetzalcoatlus"]/statBases</xpath>
+	<value>
+		<MeleeDodgeChance>0.1</MeleeDodgeChance>
+		<MeleeCritChance>0.4</MeleeCritChance>
+	</value>
+  </Operation>
+
+  <Operation Class="PatchOperationAttributeSet">
+    <xpath>*/ThingDef[defName="Quetzalcoatlus"]/tools/li</xpath>
+    <attribute>Class</attribute>
+    <value>CombatExtended.ToolCE</value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>*/ThingDef[defName="Quetzalcoatlus"]/tools/li[linkedBodyPartsGroup="Beak"]</xpath>
+    <value>
+	<armorPenetration>0.3</armorPenetration>
+    </value>
+  </Operation>
+
+
+  <!-- ========== Pteranodon ========== -->
+
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>*/ThingDef[defName="Pteranodon"]</xpath>
+    <value>
+      <li Class="CombatExtended.RacePropertiesExtensionCE">
+        <bodyShape>Quadruped</bodyShape>
+      </li>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>*/ThingDef[defName="Pteranodon"]/statBases</xpath>
+	<value>
+		<MeleeDodgeChance>0.29</MeleeDodgeChance>
+		<MeleeCritChance>0.22</MeleeCritChance>
+	</value>
+  </Operation>
+
+  <Operation Class="PatchOperationAttributeSet">
+    <xpath>*/ThingDef[defName="Pteranodon"]/tools/li</xpath>
+    <attribute>Class</attribute>
+    <value>CombatExtended.ToolCE</value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>*/ThingDef[defName="Pteranodon"]/tools/li[linkedBodyPartsGroup="Beak"]</xpath>
+    <value>
+	<armorPenetration>0.3</armorPenetration>
+    </value>
+  </Operation>
+
+</Patch>
+
