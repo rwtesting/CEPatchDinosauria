@@ -1,21 +1,13 @@
-Combat Extended compatibility patch for Start Wars Factions (b18).
+Combat Extended compatibility patch for Dinosauria (b18).
 
-Unofficial b18 update for the a17 patch by jaeger972 (http://steamcommunity.com/sharedfiles/filedetails/?id=974909952).
+Add values needed by CE, including melee dodge, melee crit, armor penetration, and body shape.
 
-Notes:
-- Apparel defaults to Bulk=1.0 and has not been patched (a17 patch uses Bulk=2.0).
-- Set Imperial Credit Bulk=0 to avoid pawns loading with no ammo.
+Values are approximate, based on similar entities from the CE patch for Core animals and the a17 patch for Megafauna.  I categorized dinos based on the description and in-game pawn size, but the values may be off.
 
-Credit for patch textures and a17 CE patch belong to jaeger972.
+All body shapes are currently set to quadruped (couldn't find a non-humanoid biped shape).
 
-Original description (a17, jaeger972):
+Load order:
+- Combat Extended
+- Dinosauria
+- CEPatchDinosauria
 
-  The original mod belongs to Jecrell, Xen and harrison.
-  Only the coding for Combat Extended and some of the new textures are my work so please give credit where credit is due.
-  
-  Deflection from the melee weapons sadly couldn't make it into the CE version.
-  Due to the nature of CE the balancing of the weapons comparatively to the original version in vanilla rimworld is different.
-  Like with everything else in CE you will wreck your enemies if you gain access to the Star Wars weaponry but keep in mind that faction raids will spawn with said weaponry.
-  
-  IMPORTANT!: This mod requieres JecsTools, Star Wars - Factions and Combat Extended.
-  The load order should be: JecsTools -> Star Wars - Factions -> Combat Extended -> Star Wars - Factions(CE Patch)
