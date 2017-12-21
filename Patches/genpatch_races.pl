@@ -2,6 +2,10 @@
 use strict;
 use warnings;
 
+# print to this output patch file, overwrite existing
+my $OUTFILE = "./ThingDefs_Races/Races_Animal_Dinosauria.xml";
+open(OUTFILE, ">", $OUTFILE) or die("ERR: open/write $OUTFILE: $!\n");
+
 # output CE patch code for each listed dino, in order:
 # (match order to dinosauria xml for easier comparison)
 #
@@ -82,6 +86,7 @@ my %VALS_TINY     = (MeleeDodgeChance => 0.45, MeleeCritChance => 0.15); # like 
 
 # hash of values per dino
 # tools are bodyparts from <tools> entry in source xml
+# FIXME: Read tools bodyparts from source XML instead of hardcoding
 my %DINOS = (
 
     # Raptors - fast + hit hard - model after Enelodont a17
@@ -228,9 +233,20 @@ my %DINOS = (
 );
 
 # print header
-print(<<EOF);
+print OUTFILE (<<EOF);
 <?xml version="1.0" encoding="utf-8" ?>
 <Patch>
+
+  <!-- Warning: This will break if Dinosauria author moves dino defs to separate xml files.
+       You would need to create 1 PatchOperationSequence per xml file patched (or per dino)
+       (sequence = 1st xpath locates file for sequence = faster load times). -->
+
+  <!-- The script used to generate this file can easily be updated to 1 sequence per dino. -->
+
+  <Operation Class="PatchOperationSequence">
+  <success>Always</success>
+  <operations>
+
 EOF
 
 # print one patch per dino name
@@ -240,58 +256,62 @@ foreach my $dino (@DINOS)
     chomp($dino);
 
     # Auto-generate a template for each $dino name.
-    # Will need to manually edit in the Melee values, etc.
-    print(<<EOF);
+    # (use one sequence per dino to reduce load times, short circuit)
+    # Load times: Defs/ThingDef < /Defs/ThingDef << */ThingDef/ <<< //ThingDef/
+    print OUTFILE (<<EOF);
 
   <!-- ========== $dino ========== -->
 
-  <Operation Class="PatchOperationAddModExtension">
-    <xpath>*/ThingDef[defName="$dino"]</xpath>
+  <li Class="PatchOperationAddModExtension">
+    <xpath>Defs/ThingDef[defName="$dino"]</xpath>
     <value>
       <li Class="CombatExtended.RacePropertiesExtensionCE">
         <bodyShape>$DEFAULT{'bodyShape'}</bodyShape>
       </li>
     </value>
-  </Operation>
+  </li>
 
-  <Operation Class="PatchOperationAdd">
+  <li Class="PatchOperationAdd">
     <xpath>*/ThingDef[defName="$dino"]/statBases</xpath>
 	<value>
 		<MeleeDodgeChance>$DINOS{$dino}->{'MeleeDodgeChance'}</MeleeDodgeChance>
 		<MeleeCritChance>$DINOS{$dino}->{'MeleeCritChance'}</MeleeCritChance>
 	</value>
-  </Operation>
-
-  <Operation Class="PatchOperationAttributeSet">
-    <xpath>*/ThingDef[defName="$dino"]/tools/li</xpath>
-    <attribute>Class</attribute>
-    <value>CombatExtended.ToolCE</value>
-  </Operation>
+  </li>
 
 EOF
 
-    # For each bodypartgroup listed for this dino, add DEFAULT armor pen value
-    # (otherwise CE reports error)
+    # For each bodypartgroup listed for this dino, add CE attribute + armor pen value
     foreach $bodypart ( @{ $DINOS{$dino}->{tools} } )
     {
         $ap = $DEFAULT_AP{$bodypart} || $DEFAULT_AP;
-        print(<<EOF);
-  <Operation Class="PatchOperationAdd">
+        print OUTFILE (<<EOF);
+  <li Class="PatchOperationAttributeSet">
+    <xpath>*/ThingDef[defName="$dino"]/tools/li[linkedBodyPartsGroup="$bodypart"]</xpath>
+    <attribute>Class</attribute>
+    <value>CombatExtended.ToolCE</value>
+  </li>
+
+  <li Class="PatchOperationAdd">
     <xpath>*/ThingDef[defName="$dino"]/tools/li[linkedBodyPartsGroup="$bodypart"]</xpath>
     <value>
 	<armorPenetration>$ap</armorPenetration>
     </value>
-  </Operation>
+  </li>
 
 EOF
     }
 }
 
 # print closer
-print(<<EOF);
+print OUTFILE (<<EOF);
+  </operations> <!-- End sequence -->
+  </Operation>  <!-- End sequence -->
+
 </Patch>
 
 EOF
+close(OUTFILE) or warn("WARN: close $OUTFILE: $!\n");
 
 exit(0);
 
