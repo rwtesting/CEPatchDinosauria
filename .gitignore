@@ -1,5 +1,7 @@
 *.suo
 *.cache
-*/Thumbs.db
-*/*.pl
-*/*.py
+Thumbs.db
+*.pl
+*.py
+*.txt
+*/_test
