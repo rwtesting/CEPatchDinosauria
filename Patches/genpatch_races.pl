@@ -234,13 +234,13 @@ EOF
             $ap = $DEFAULT_AP{$tool->{linkedBodyPartsGroup}} || $DEFAULT_AP;
             print OUTFILE (<<EOF);
     <li Class="PatchOperationAttributeSet">
-    <xpath>*/ThingDef[defName="$dino"]/tools/li[linkedBodyPartsGroup="$tool->{linkedBodyPartsGroup}"]</xpath>
+    <xpath>Defs/ThingDef[defName="$dino"]/tools/li[linkedBodyPartsGroup="$tool->{linkedBodyPartsGroup}"]</xpath>
         <attribute>Class</attribute>
         <value>CombatExtended.ToolCE</value>
     </li>
 
     <li Class="PatchOperationAdd">
-    <xpath>*/ThingDef[defName="$dino"]/tools/li[linkedBodyPartsGroup="$tool->{linkedBodyPartsGroup}"]</xpath>
+    <xpath>Defs/ThingDef[defName="$dino"]/tools/li[linkedBodyPartsGroup="$tool->{linkedBodyPartsGroup}"]</xpath>
     <value>
         <armorPenetration>$ap</armorPenetration>
     </value>
@@ -264,7 +264,7 @@ EOF
     <!-- List dodge/crit last so that we know all previous sequence entries succeeded.
          These values are easy to check in-game. -->
     <li Class="PatchOperationAdd">
-    <xpath>*/ThingDef[defName="$dino"]/statBases</xpath>
+    <xpath>Defs/ThingDef[defName="$dino"]/statBases</xpath>
     <value>
         <MeleeDodgeChance>$DINOS{$dino}->{'MeleeDodgeChance'}</MeleeDodgeChance>
         <MeleeCritChance>$DINOS{$dino}->{'MeleeCritChance'}</MeleeCritChance>
