@@ -2,47 +2,16 @@
 use strict;
 use warnings;
 
+use XML::Simple;
+
+#
+# Generate patch to make Dinosauria races compatible with Combat Extended, b18.
+#
+
+# Get dino tool melee bodyparts from mod source xml
+my $SOURCEFILE = "../../1136958577/Defs/ThingDefs_Races/Races_Animal_Dinosauria.xml";
 # print to this output patch file, overwrite existing
 my $OUTFILE = "./ThingDefs_Races/Races_Animal_Dinosauria.xml";
-open(OUTFILE, ">", $OUTFILE) or die("ERR: open/write $OUTFILE: $!\n");
-
-# output CE patch code for each listed dino, in order:
-# (match order to dinosauria xml for easier comparison)
-#
-my @DINOS = qw(
-    TyrannosaurusRex
-    Yutyrannus
-    Carnotaurus
-    Allosaurus
-    Spinosaurus
-    Baryonyx
-    Ankylosaurus
-    Minmi
-    Brachiosaurus
-    Brontosaurus
-    Diplodocus
-    Magyarosaurus
-    Utahraptor
-    Dakotaraptor
-    Dilophosaurus
-    Velociraptor
-    Compsognathus
-    Gallimimus
-    Gigantoraptor
-    Iguanodon
-    Parasaur
-    Corythosaurus
-    Deinocheirus
-    Therizinosaurus
-    Pachycephalosaurus
-    Stygimoloch
-    Dryosaurus
-    Stegosaurus
-    Triceratops
-    Protoceratops
-    Quetzalcoatlus
-    Pteranodon
-);
 
 # DEFAULT values not in source xml from Dinosauria
 my %DEFAULT = (
@@ -54,7 +23,7 @@ my %DEFAULT = (
 # armor penetration DEFAULT per bodypart
 my $DEFAULT_AP = 0.15;		# default ap for unlisted bodyparts
 my %DEFAULT_AP = (
-    HeadAttackTool => 0.133,	# Elephant
+    HeadAttackTool => 0.13,	# Elephant
     TailAttackTool => 0.17,	# (like a leg?)
 
     HornAttackTool => 0.457,	# Thrumbo (should differentiate between horncut/hornstab
@@ -90,149 +59,124 @@ my %VALS_TINY     = (MeleeDodgeChance => 0.45, MeleeCritChance => 0.15); # like 
 my %DINOS = (
 
     # Raptors - fast + hit hard - model after Enelodont a17
-    TyrannosaurusRex	=> {
+    TyrannosaurusRex => {
 	%VALS_RAPTOR,
-	tools => [ qw( LeftLeg RightLeg Teeth ) ],
     },
-    Yutyrannus	=> {
+    Yutyrannus => {
 	%VALS_RAPTOR,
-	tools => [ qw( LeftLeg RightLeg Teeth ) ],
     },
-    Carnotaurus	=> {
+    Carnotaurus => {
 	%VALS_RAPTOR,
-	tools => [ qw( LeftLeg RightLeg Teeth ) ],
     },
-    Allosaurus	=> {
+    Allosaurus => {
 	%VALS_RAPTOR,
-	tools => [ qw( LeftLeg RightLeg Teeth ) ],
     },
-    Spinosaurus	=> {
+    Spinosaurus => {
 	%VALS_RAPTOR,
-	tools => [ qw( LeftLeg RightLeg Teeth ) ],
     },
-    Utahraptor	=> {
+    Utahraptor => {
 	%VALS_RAPTOR,
-	tools => [ qw( LeftLegClawAttackTool RightLegClawAttackTool Teeth ) ],
     },
-    Dakotaraptor	=> {
+    Dakotaraptor => {
 	%VALS_RAPTOR,
-	tools => [ qw( LeftLegClawAttackTool RightLegClawAttackTool Teeth ) ],
     },
-    Dilophosaurus	=> {
+    Dilophosaurus => {
 	%VALS_RAPTOR,
-	tools => [ qw( LeftLegClawAttackTool RightLegClawAttackTool Teeth ) ],
     },
 
     # Raptors, small
-    Compsognathus	=> {
+    Compsognathus => {
 	%VALS_SMRAPTOR,
-	tools => [ qw( LeftLegClawAttackTool RightLegClawAttackTool Teeth ) ],
     },
-    Velociraptor	=> {
+    Velociraptor => {
 	%VALS_SMRAPTOR,
-	tools => [ qw( LeftLegClawAttackTool RightLegClawAttackTool Teeth ) ],
     },
 
     # Tanks
-    Ankylosaurus	=> {
+    Ankylosaurus => {
 	%VALS_TANK,
-	tools => [ qw( TailAttackTool HeadAttackTool ) ],
     },
-    Minmi	=> {
+    Minmi => {
 	%VALS_TANK,
-	tools => [ qw( TailAttackTool HeadAttackTool ) ],
     },
-    Pachycephalosaurus	=> {
+    Pachycephalosaurus => {
 	%VALS_TANK,
-	tools => [ qw( HeadAttackTool ) ],
     },
-    Stygimoloch	=> {
+    Stygimoloch => {
 	%VALS_TANK,
-	tools => [ qw( HeadAttackTool ) ],
     },
-    Stegosaurus	=> {
+    Stegosaurus => {
 	%VALS_TANK,
-	tools => [ qw( TailAttackTool HeadAttackTool ) ],
     },
-    Triceratops	=> {
+    Triceratops => {
 	%VALS_TANK,
-	tools => [ qw( HornAttackTool HeadAttackTool ) ],
     },
 
     # Big Vegetarians
-    Brachiosaurus	=> {
+    Brachiosaurus => {
 	%VALS_BIGVEG,
-	tools => [ qw( TailAttackTool FrontLeftLeg FrontRightLeg  ) ],
     },
-    Brontosaurus	=> {
+    Brontosaurus => {
 	%VALS_BIGVEG,
-	tools => [ qw( TailAttackTool FrontLeftLeg FrontRightLeg  ) ],
     },
-    Diplodocus	=> {
+    Diplodocus => {
 	%VALS_BIGVEG,
-	tools => [ qw( TailAttackTool FrontLeftLeg FrontRightLeg  ) ],
     },
 
     # Medium Vegetarians
-    Baryonyx	=> {
+    Baryonyx => {
 	%VALS_MEDVEG,
-	tools => [ qw( LeftLeg RightLeg Teeth ) ],
     },
-    Deinocheirus	=> {
+    Deinocheirus => {
 	%VALS_MEDVEG,
-	tools => [ qw( LeftArmClawAttackTool RightArmClawAttackTool HeadAttackTool ) ],
     },
-    Therizinosaurus	=> {
+    Therizinosaurus => {
 	%VALS_MEDVEG,
-	tools => [ qw( LeftArmClawAttackTool RightArmClawAttackTool HeadAttackTool ) ],
     },
-    Quetzalcoatlus	=> {
+    Quetzalcoatlus => {
 	%VALS_MEDVEG,
-	tools => [ qw( Beak ) ],
     },
 
     # Small
-    Magyarosaurus	=> {
+    Magyarosaurus => {
 	%VALS_SMVEG,
-	tools => [ qw( TailAttackTool FrontLeftLeg FrontRightLeg  ) ],
     },
-    Gallimimus	=> {
+    Gallimimus => {
 	%VALS_SMVEG,
-	tools => [ qw( LeftLeg RightLeg ) ],
     },
-    Gigantoraptor	=> {
+    Gigantoraptor => {
 	%VALS_SMVEG,
-	tools => [ qw( LeftLeg RightLeg ) ],
     },
-    Iguanodon	=> {
+    Iguanodon => {
 	%VALS_SMVEG,
-	tools => [ qw( HeadAttackTool ) ],
     },
-    Parasaur	=> {
+    Parasaur => {
 	%VALS_SMVEG,
-	tools => [ qw( HeadAttackTool ) ],
     },
-    Corythosaurus	=> {
+    Corythosaurus => {
 	%VALS_SMVEG,
-	tools => [ qw( HeadAttackTool ) ],
     },
-    Pteranodon	=> {
+    Pteranodon => {
 	%VALS_SMVEG,
-	tools => [ qw( Beak ) ],
     },
 
     # Tiny
-    Dryosaurus	=> {
+    Dryosaurus => {
         %VALS_TINY,
-	tools => [ qw( HeadAttackTool ) ],
     },
-    Protoceratops	=> {
+    Protoceratops => {
         %VALS_TINY,
-	tools => [ qw( HeadAttackTool ) ],
     },
 );
 
-# print header
+# Open source/output files
+# Open source/output files
+my $source =  XMLin($SOURCEFILE, ForceArray => [qw(ThingDef li)])
+    or die("ERR: read source xml $SOURCEFILE: $!\n");
+open(OUTFILE, ">", $OUTFILE)
+    or die("Failed to open/write $OUTFILE: $!\n");
+
+# Header 
 print OUTFILE (<<EOF);
 <?xml version="1.0" encoding="utf-8" ?>
 <Patch>
@@ -249,58 +193,85 @@ print OUTFILE (<<EOF);
 
 EOF
 
-# print one patch per dino name
-my($bodypart, $ap);
-foreach my $dino (@DINOS)
+#
+# Step through source xml.
+# Generate a template for each $dino found.
+# If dino is found that we don't have CE values for, warn and skip.
+#
+# (use one sequence per file to reduce load times, short circuit)
+# Load times: Defs/ThingDef < /Defs/ThingDef << */ThingDef/ <<< //ThingDef/
+#
+my($dino, $tool, $ap);
+foreach my $entry ( @{$source->{ThingDef}} )
 {
-    chomp($dino);
+    # Skip non-dinos and unknown dinos
+    next unless ($dino = $entry->{defName}) && $entry->{ParentName} eq "AnimalThingBase";
 
-    # Auto-generate a template for each $dino name.
-    # (use one sequence per dino to reduce load times, short circuit)
-    # Load times: Defs/ThingDef < /Defs/ThingDef << */ThingDef/ <<< //ThingDef/
+    if (!exists $DINOS{$dino})
+    {
+        warn(<<EOF);
+WARN: New or unknown dino found. Skipping because no CE data:
+
+Name: $dino
+Desc:
+$entry->{description}
+
+EOF
+        next;
+    }
+
+    # Start patch
     print OUTFILE (<<EOF);
-
   <!-- ========== $dino ========== -->
-
-  <li Class="PatchOperationAddModExtension">
-    <xpath>Defs/ThingDef[defName="$dino"]</xpath>
-    <value>
-      <li Class="CombatExtended.RacePropertiesExtensionCE">
-        <bodyShape>$DEFAULT{'bodyShape'}</bodyShape>
-      </li>
-    </value>
-  </li>
-
-  <li Class="PatchOperationAdd">
-    <xpath>*/ThingDef[defName="$dino"]/statBases</xpath>
-	<value>
-		<MeleeDodgeChance>$DINOS{$dino}->{'MeleeDodgeChance'}</MeleeDodgeChance>
-		<MeleeCritChance>$DINOS{$dino}->{'MeleeCritChance'}</MeleeCritChance>
-	</value>
-  </li>
 
 EOF
 
     # For each bodypartgroup listed for this dino, add CE attribute + armor pen value
-    foreach $bodypart ( @{ $DINOS{$dino}->{tools} } )
+    if ($entry->{tools}->{li})
     {
-        $ap = $DEFAULT_AP{$bodypart} || $DEFAULT_AP;
-        print OUTFILE (<<EOF);
-  <li Class="PatchOperationAttributeSet">
-    <xpath>*/ThingDef[defName="$dino"]/tools/li[linkedBodyPartsGroup="$bodypart"]</xpath>
-    <attribute>Class</attribute>
-    <value>CombatExtended.ToolCE</value>
-  </li>
+        foreach $tool ( @{ $entry->{tools}->{li} } )
+        {
+            $ap = $DEFAULT_AP{$tool->{linkedBodyPartsGroup}} || $DEFAULT_AP;
+            print OUTFILE (<<EOF);
+    <li Class="PatchOperationAttributeSet">
+    <xpath>*/ThingDef[defName="$dino"]/tools/li[linkedBodyPartsGroup="$tool->{linkedBodyPartsGroup}"]</xpath>
+        <attribute>Class</attribute>
+        <value>CombatExtended.ToolCE</value>
+    </li>
 
-  <li Class="PatchOperationAdd">
-    <xpath>*/ThingDef[defName="$dino"]/tools/li[linkedBodyPartsGroup="$bodypart"]</xpath>
+    <li Class="PatchOperationAdd">
+    <xpath>*/ThingDef[defName="$dino"]/tools/li[linkedBodyPartsGroup="$tool->{linkedBodyPartsGroup}"]</xpath>
     <value>
-	<armorPenetration>$ap</armorPenetration>
+        <armorPenetration>$ap</armorPenetration>
     </value>
-  </li>
+    </li>
 
 EOF
+        }
     }
+
+    # Add bodyShape and melee dodge/crit
+    print OUTFILE (<<EOF);
+    <li Class="PatchOperationAddModExtension">
+    <xpath>Defs/ThingDef[defName="$dino"]</xpath>
+    <value>
+        <li Class="CombatExtended.RacePropertiesExtensionCE">
+            <bodyShape>$DEFAULT{'bodyShape'}</bodyShape>
+        </li>
+    </value>
+    </li>
+
+    <!-- List dodge/crit last so that we know all previous sequence entries succeeded.
+         These values are easy to check in-game. -->
+    <li Class="PatchOperationAdd">
+    <xpath>*/ThingDef[defName="$dino"]/statBases</xpath>
+    <value>
+        <MeleeDodgeChance>$DINOS{$dino}->{'MeleeDodgeChance'}</MeleeDodgeChance>
+        <MeleeCritChance>$DINOS{$dino}->{'MeleeCritChance'}</MeleeCritChance>
+    </value>
+    </li>
+
+EOF
 }
 
 # print closer
@@ -317,4 +288,17 @@ exit(0);
 
 __END__
 
+=head1 NOTES
+
+=head2 Defined in BodyPartGroups_Dinosaurs.xml
+
+    TailAttackTool
+    LeftArmClawAttackTool
+    RightArmClawAttackTool
+    LeftLegClawAttackTool
+    RightLegClawAttackTool
+    LeftLeg
+    RightLeg
+
+=cut
 
