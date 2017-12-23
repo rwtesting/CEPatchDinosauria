@@ -135,6 +135,7 @@ my %DINOS = (
     },
     Quetzalcoatlus => {
 	%VALS_MEDVEG,
+	bodyShape => 'Birdlike',
     },
 
     # Small
@@ -158,6 +159,7 @@ my %DINOS = (
     },
     Pteranodon => {
 	%VALS_SMVEG,
+	bodyShape => 'Birdlike',
     },
 
     # Tiny
@@ -201,7 +203,7 @@ EOF
 # (use one sequence per file to reduce load times, short circuit)
 # Load times: Defs/ThingDef < /Defs/ThingDef << */ThingDef/ <<< //ThingDef/
 #
-my($dino, $tool, $ap);
+my($dino, $tool, $ap, $bodyshape);
 foreach my $entry ( @{$source->{ThingDef}} )
 {
     # Skip non-dinos and unknown dinos
@@ -251,12 +253,13 @@ EOF
     }
 
     # Add bodyShape and melee dodge/crit
+    $bodyshape = $DINOS{$dino}->{bodyShape} || $DEFAULT{bodyShape};
     print OUTFILE (<<EOF);
     <li Class="PatchOperationAddModExtension">
     <xpath>Defs/ThingDef[defName="$dino"]</xpath>
     <value>
         <li Class="CombatExtended.RacePropertiesExtensionCE">
-            <bodyShape>$DEFAULT{'bodyShape'}</bodyShape>
+            <bodyShape>$bodyshape</bodyShape>
         </li>
     </value>
     </li>
@@ -266,8 +269,8 @@ EOF
     <li Class="PatchOperationAdd">
     <xpath>Defs/ThingDef[defName="$dino"]/statBases</xpath>
     <value>
-        <MeleeDodgeChance>$DINOS{$dino}->{'MeleeDodgeChance'}</MeleeDodgeChance>
-        <MeleeCritChance>$DINOS{$dino}->{'MeleeCritChance'}</MeleeCritChance>
+        <MeleeDodgeChance>$DINOS{$dino}->{MeleeDodgeChance}</MeleeDodgeChance>
+        <MeleeCritChance>$DINOS{$dino}->{MeleeCritChance}</MeleeCritChance>
     </value>
     </li>
 
