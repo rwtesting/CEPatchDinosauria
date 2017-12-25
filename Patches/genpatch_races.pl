@@ -203,6 +203,7 @@ my %PATCHABLES = (
     },
     Therizinosaurus => {
 	%VALS_MEDVEG,
+	bodyShape => 'Birdlike',
         ArmorRating_Blunt => $DEF{_Armor_Tank1_B},	# vanilla 3.2
         ArmorRating_Sharp => $DEF{_Armor_Tank1_S},	# vanilla 3
 	#baseHealthScale   => $DEF{baseHealthScale},	# vanilla 4
