@@ -42,8 +42,8 @@ my %DEF = (
 # with a lower base (the %DEF settings above).
 #
 # 1. Base     (2.7 blunt, 2.5 sharp)
-# 2. Tanky #1 (Base*1.9 blunt / Base *1.2 sharp)
-# 3. Tanky #2 (Base*1.9 blunt / Base *1.2 sharp)
+# 2. Tanky #1 (Base*1.19 blunt / Base *1.2 sharp)
+# 3. Tanky #2 (Base*1.56 blunt / Base *1.2 sharp)
 #
 $DEF{_Armor_Tank1_B} = _ffmt(1.19*$DEF{ArmorRating_Blunt}); # armor for Tanky #1 - blunt
 $DEF{_Armor_Tank1_S} = _ffmt(1.20*$DEF{ArmorRating_Sharp}); # armor for Tanky #1 - slashing
