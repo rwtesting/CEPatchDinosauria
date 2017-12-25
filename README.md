@@ -1,5 +1,3 @@
-TODO: adjust armor values for CE (dinos are too tanky / hard to hit with vanilla values)
-
 Combat Extended compatibility patch for Dinosauria (b18).
 
 Note: Stun attacks from Dinosauria animals have temporarily been removed to avoid
