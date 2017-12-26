@@ -4,11 +4,9 @@ use warnings;
 
 use lib "../../_lib";
 use RWPatcher::Animals;
-use XML::Simple;
-use File::Basename qw(basename dirname);
 
 #
-# Generate patch to make entitiesauria races compatible with Combat Extended, b18.
+# Generate patch to make Dinosauria races compatible with Combat Extended, b18.
 #
 
 # Get entity tool melee bodyparts from mod source xml
@@ -19,7 +17,7 @@ my @SOURCEFILES = qw(
 );
 my $SOURCEMOD = 'Dinosauria';  # Only patch if this mod is loaded (leave undefined to skip)
 
-# DEFAULT values not in source xml from entitiesauria
+# DEFAULT values not in source xml from Dinosauria
 my %DEF = (
     bodyShape => "Quadruped",
     MeleeDodgeChance => 0.08,	# Elephant
