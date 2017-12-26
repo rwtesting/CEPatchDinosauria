@@ -23,7 +23,7 @@
     </value>
     </li>
 
-    <!-- Patch TyrannosaurusRex : Tools / Verbs -->
+    <!-- Patch TyrannosaurusRex : Tools -->
 
     <li Class="PatchOperationAttributeSet">
     <xpath>Defs/ThingDef[defName="TyrannosaurusRex"]/tools/li[linkedBodyPartsGroup="LeftLeg"]</xpath>
@@ -100,7 +100,7 @@
     </value>
     </li>
 
-    <!-- Patch Yutyrannus : Tools / Verbs -->
+    <!-- Patch Yutyrannus : Tools -->
 
     <li Class="PatchOperationAttributeSet">
     <xpath>Defs/ThingDef[defName="Yutyrannus"]/tools/li[linkedBodyPartsGroup="LeftLeg"]</xpath>
@@ -177,7 +177,7 @@
     </value>
     </li>
 
-    <!-- Patch Carnotaurus : Tools / Verbs -->
+    <!-- Patch Carnotaurus : Tools -->
 
     <li Class="PatchOperationAttributeSet">
     <xpath>Defs/ThingDef[defName="Carnotaurus"]/tools/li[linkedBodyPartsGroup="LeftLeg"]</xpath>
@@ -254,7 +254,7 @@
     </value>
     </li>
 
-    <!-- Patch Allosaurus : Tools / Verbs -->
+    <!-- Patch Allosaurus : Tools -->
 
     <li Class="PatchOperationAttributeSet">
     <xpath>Defs/ThingDef[defName="Allosaurus"]/tools/li[linkedBodyPartsGroup="LeftLeg"]</xpath>
@@ -331,7 +331,7 @@
     </value>
     </li>
 
-    <!-- Patch Spinosaurus : Tools / Verbs -->
+    <!-- Patch Spinosaurus : Tools -->
 
     <li Class="PatchOperationAttributeSet">
     <xpath>Defs/ThingDef[defName="Spinosaurus"]/tools/li[linkedBodyPartsGroup="LeftLeg"]</xpath>
@@ -408,7 +408,7 @@
     </value>
     </li>
 
-    <!-- Patch Baryonyx : Tools / Verbs -->
+    <!-- Patch Baryonyx : Tools -->
 
     <li Class="PatchOperationAttributeSet">
     <xpath>Defs/ThingDef[defName="Baryonyx"]/tools/li[linkedBodyPartsGroup="LeftLeg"]</xpath>
@@ -485,7 +485,7 @@
     </value>
     </li>
 
-    <!-- Patch Ankylosaurus : Tools / Verbs -->
+    <!-- Patch Ankylosaurus : Tools -->
 
     <li Class="PatchOperationAttributeSet">
     <xpath>Defs/ThingDef[defName="Ankylosaurus"]/tools/li[linkedBodyPartsGroup="TailAttackTool"]</xpath>
@@ -509,7 +509,7 @@
     <li Class="PatchOperationAdd">
     <xpath>Defs/ThingDef[defName="Ankylosaurus"]/tools/li[linkedBodyPartsGroup="HeadAttackTool"]</xpath>
     <value>
-        <armorPenetration>0.13</armorPenetration>
+        <armorPenetration>0.133</armorPenetration>
     </value>
     </li>
 
@@ -544,7 +544,7 @@
     </value>
     </li>
 
-    <!-- Patch Minmi : Tools / Verbs -->
+    <!-- Patch Minmi : Tools -->
 
     <li Class="PatchOperationAttributeSet">
     <xpath>Defs/ThingDef[defName="Minmi"]/tools/li[linkedBodyPartsGroup="TailAttackTool"]</xpath>
@@ -568,7 +568,7 @@
     <li Class="PatchOperationAdd">
     <xpath>Defs/ThingDef[defName="Minmi"]/tools/li[linkedBodyPartsGroup="HeadAttackTool"]</xpath>
     <value>
-        <armorPenetration>0.13</armorPenetration>
+        <armorPenetration>0.133</armorPenetration>
     </value>
     </li>
 
@@ -603,7 +603,7 @@
     </value>
     </li>
 
-    <!-- Patch Brachiosaurus : Tools / Verbs -->
+    <!-- Patch Brachiosaurus : Tools -->
 
     <li Class="PatchOperationAttributeSet">
     <xpath>Defs/ThingDef[defName="Brachiosaurus"]/tools/li[linkedBodyPartsGroup="TailAttackTool"]</xpath>
@@ -675,7 +675,7 @@
     </value>
     </li>
 
-    <!-- Patch Brontosaurus : Tools / Verbs -->
+    <!-- Patch Brontosaurus : Tools -->
 
     <li Class="PatchOperationAttributeSet">
     <xpath>Defs/ThingDef[defName="Brontosaurus"]/tools/li[linkedBodyPartsGroup="TailAttackTool"]</xpath>
@@ -747,7 +747,7 @@
     </value>
     </li>
 
-    <!-- Patch Diplodocus : Tools / Verbs -->
+    <!-- Patch Diplodocus : Tools -->
 
     <li Class="PatchOperationAttributeSet">
     <xpath>Defs/ThingDef[defName="Diplodocus"]/tools/li[linkedBodyPartsGroup="TailAttackTool"]</xpath>
@@ -819,7 +819,7 @@
     </value>
     </li>
 
-    <!-- Patch Magyarosaurus : Tools / Verbs -->
+    <!-- Patch Magyarosaurus : Tools -->
 
     <li Class="PatchOperationAttributeSet">
     <xpath>Defs/ThingDef[defName="Magyarosaurus"]/tools/li[linkedBodyPartsGroup="TailAttackTool"]</xpath>
@@ -891,7 +891,7 @@
     </value>
     </li>
 
-    <!-- Patch Utahraptor : Tools / Verbs -->
+    <!-- Patch Utahraptor : Tools -->
 
     <li Class="PatchOperationAttributeSet">
     <xpath>Defs/ThingDef[defName="Utahraptor"]/tools/li[linkedBodyPartsGroup="LeftLegClawAttackTool"]</xpath>
@@ -902,7 +902,7 @@
     <li Class="PatchOperationAdd">
     <xpath>Defs/ThingDef[defName="Utahraptor"]/tools/li[linkedBodyPartsGroup="LeftLegClawAttackTool"]</xpath>
     <value>
-        <armorPenetration>0.227</armorPenetration>
+        <armorPenetration>0.077</armorPenetration>
     </value>
     </li>
 
@@ -915,7 +915,7 @@
     <li Class="PatchOperationAdd">
     <xpath>Defs/ThingDef[defName="Utahraptor"]/tools/li[linkedBodyPartsGroup="RightLegClawAttackTool"]</xpath>
     <value>
-        <armorPenetration>0.227</armorPenetration>
+        <armorPenetration>0.077</armorPenetration>
     </value>
     </li>
 
@@ -958,7 +958,7 @@
     </value>
     </li>
 
-    <!-- Patch Dakotaraptor : Tools / Verbs -->
+    <!-- Patch Dakotaraptor : Tools -->
 
     <li Class="PatchOperationAttributeSet">
     <xpath>Defs/ThingDef[defName="Dakotaraptor"]/tools/li[linkedBodyPartsGroup="LeftLegClawAttackTool"]</xpath>
@@ -969,7 +969,7 @@
     <li Class="PatchOperationAdd">
     <xpath>Defs/ThingDef[defName="Dakotaraptor"]/tools/li[linkedBodyPartsGroup="LeftLegClawAttackTool"]</xpath>
     <value>
-        <armorPenetration>0.227</armorPenetration>
+        <armorPenetration>0.077</armorPenetration>
     </value>
     </li>
 
@@ -982,7 +982,7 @@
     <li Class="PatchOperationAdd">
     <xpath>Defs/ThingDef[defName="Dakotaraptor"]/tools/li[linkedBodyPartsGroup="RightLegClawAttackTool"]</xpath>
     <value>
-        <armorPenetration>0.227</armorPenetration>
+        <armorPenetration>0.077</armorPenetration>
     </value>
     </li>
 
@@ -1025,7 +1025,7 @@
     </value>
     </li>
 
-    <!-- Patch Dilophosaurus : Tools / Verbs -->
+    <!-- Patch Dilophosaurus : Tools -->
 
     <li Class="PatchOperationAttributeSet">
     <xpath>Defs/ThingDef[defName="Dilophosaurus"]/tools/li[linkedBodyPartsGroup="LeftLegClawAttackTool"]</xpath>
@@ -1036,7 +1036,7 @@
     <li Class="PatchOperationAdd">
     <xpath>Defs/ThingDef[defName="Dilophosaurus"]/tools/li[linkedBodyPartsGroup="LeftLegClawAttackTool"]</xpath>
     <value>
-        <armorPenetration>0.227</armorPenetration>
+        <armorPenetration>0.077</armorPenetration>
     </value>
     </li>
 
@@ -1049,7 +1049,7 @@
     <li Class="PatchOperationAdd">
     <xpath>Defs/ThingDef[defName="Dilophosaurus"]/tools/li[linkedBodyPartsGroup="RightLegClawAttackTool"]</xpath>
     <value>
-        <armorPenetration>0.227</armorPenetration>
+        <armorPenetration>0.077</armorPenetration>
     </value>
     </li>
 
@@ -1092,7 +1092,7 @@
     </value>
     </li>
 
-    <!-- Patch Velociraptor : Tools / Verbs -->
+    <!-- Patch Velociraptor : Tools -->
 
     <li Class="PatchOperationAttributeSet">
     <xpath>Defs/ThingDef[defName="Velociraptor"]/tools/li[linkedBodyPartsGroup="LeftLegClawAttackTool"]</xpath>
@@ -1103,7 +1103,7 @@
     <li Class="PatchOperationAdd">
     <xpath>Defs/ThingDef[defName="Velociraptor"]/tools/li[linkedBodyPartsGroup="LeftLegClawAttackTool"]</xpath>
     <value>
-        <armorPenetration>0.227</armorPenetration>
+        <armorPenetration>0.077</armorPenetration>
     </value>
     </li>
 
@@ -1116,7 +1116,7 @@
     <li Class="PatchOperationAdd">
     <xpath>Defs/ThingDef[defName="Velociraptor"]/tools/li[linkedBodyPartsGroup="RightLegClawAttackTool"]</xpath>
     <value>
-        <armorPenetration>0.227</armorPenetration>
+        <armorPenetration>0.077</armorPenetration>
     </value>
     </li>
 
@@ -1159,7 +1159,7 @@
     </value>
     </li>
 
-    <!-- Patch Compsognathus : Tools / Verbs -->
+    <!-- Patch Compsognathus : Tools -->
 
     <li Class="PatchOperationAttributeSet">
     <xpath>Defs/ThingDef[defName="Compsognathus"]/tools/li[linkedBodyPartsGroup="LeftLegClawAttackTool"]</xpath>
@@ -1170,7 +1170,7 @@
     <li Class="PatchOperationAdd">
     <xpath>Defs/ThingDef[defName="Compsognathus"]/tools/li[linkedBodyPartsGroup="LeftLegClawAttackTool"]</xpath>
     <value>
-        <armorPenetration>0.227</armorPenetration>
+        <armorPenetration>0.077</armorPenetration>
     </value>
     </li>
 
@@ -1183,7 +1183,7 @@
     <li Class="PatchOperationAdd">
     <xpath>Defs/ThingDef[defName="Compsognathus"]/tools/li[linkedBodyPartsGroup="RightLegClawAttackTool"]</xpath>
     <value>
-        <armorPenetration>0.227</armorPenetration>
+        <armorPenetration>0.077</armorPenetration>
     </value>
     </li>
 
@@ -1226,7 +1226,7 @@
     </value>
     </li>
 
-    <!-- Patch Gallimimus : Tools / Verbs -->
+    <!-- Patch Gallimimus : Tools -->
 
     <li Class="PatchOperationAttributeSet">
     <xpath>Defs/ThingDef[defName="Gallimimus"]/tools/li[linkedBodyPartsGroup="LeftLeg"]</xpath>
@@ -1290,7 +1290,7 @@
     </value>
     </li>
 
-    <!-- Patch Gigantoraptor : Tools / Verbs -->
+    <!-- Patch Gigantoraptor : Tools -->
 
     <li Class="PatchOperationAttributeSet">
     <xpath>Defs/ThingDef[defName="Gigantoraptor"]/tools/li[linkedBodyPartsGroup="LeftLeg"]</xpath>
@@ -1354,7 +1354,7 @@
     </value>
     </li>
 
-    <!-- Patch Iguanodon : Tools / Verbs -->
+    <!-- Patch Iguanodon : Tools -->
 
     <li Class="PatchOperationAttributeSet">
     <xpath>Defs/ThingDef[defName="Iguanodon"]/tools/li[linkedBodyPartsGroup="HeadAttackTool"]</xpath>
@@ -1365,7 +1365,7 @@
     <li Class="PatchOperationAdd">
     <xpath>Defs/ThingDef[defName="Iguanodon"]/tools/li[linkedBodyPartsGroup="HeadAttackTool"]</xpath>
     <value>
-        <armorPenetration>0.13</armorPenetration>
+        <armorPenetration>0.133</armorPenetration>
     </value>
     </li>
 
@@ -1400,7 +1400,7 @@
     </value>
     </li>
 
-    <!-- Patch Parasaur : Tools / Verbs -->
+    <!-- Patch Parasaur : Tools -->
 
     <li Class="PatchOperationAttributeSet">
     <xpath>Defs/ThingDef[defName="Parasaur"]/tools/li[linkedBodyPartsGroup="HeadAttackTool"]</xpath>
@@ -1411,7 +1411,7 @@
     <li Class="PatchOperationAdd">
     <xpath>Defs/ThingDef[defName="Parasaur"]/tools/li[linkedBodyPartsGroup="HeadAttackTool"]</xpath>
     <value>
-        <armorPenetration>0.13</armorPenetration>
+        <armorPenetration>0.133</armorPenetration>
     </value>
     </li>
 
@@ -1446,7 +1446,7 @@
     </value>
     </li>
 
-    <!-- Patch Corythosaurus : Tools / Verbs -->
+    <!-- Patch Corythosaurus : Tools -->
 
     <li Class="PatchOperationAttributeSet">
     <xpath>Defs/ThingDef[defName="Corythosaurus"]/tools/li[linkedBodyPartsGroup="HeadAttackTool"]</xpath>
@@ -1457,7 +1457,7 @@
     <li Class="PatchOperationAdd">
     <xpath>Defs/ThingDef[defName="Corythosaurus"]/tools/li[linkedBodyPartsGroup="HeadAttackTool"]</xpath>
     <value>
-        <armorPenetration>0.13</armorPenetration>
+        <armorPenetration>0.133</armorPenetration>
     </value>
     </li>
 
@@ -1492,7 +1492,7 @@
     </value>
     </li>
 
-    <!-- Patch Deinocheirus : Tools / Verbs -->
+    <!-- Patch Deinocheirus : Tools -->
 
     <li Class="PatchOperationAttributeSet">
     <xpath>Defs/ThingDef[defName="Deinocheirus"]/tools/li[linkedBodyPartsGroup="LeftArmClawAttackTool"]</xpath>
@@ -1503,7 +1503,7 @@
     <li Class="PatchOperationAdd">
     <xpath>Defs/ThingDef[defName="Deinocheirus"]/tools/li[linkedBodyPartsGroup="LeftArmClawAttackTool"]</xpath>
     <value>
-        <armorPenetration>0.227</armorPenetration>
+        <armorPenetration>0.077</armorPenetration>
     </value>
     </li>
 
@@ -1516,7 +1516,7 @@
     <li Class="PatchOperationAdd">
     <xpath>Defs/ThingDef[defName="Deinocheirus"]/tools/li[linkedBodyPartsGroup="RightArmClawAttackTool"]</xpath>
     <value>
-        <armorPenetration>0.227</armorPenetration>
+        <armorPenetration>0.077</armorPenetration>
     </value>
     </li>
 
@@ -1529,7 +1529,7 @@
     <li Class="PatchOperationAdd">
     <xpath>Defs/ThingDef[defName="Deinocheirus"]/tools/li[linkedBodyPartsGroup="HeadAttackTool"]</xpath>
     <value>
-        <armorPenetration>0.13</armorPenetration>
+        <armorPenetration>0.133</armorPenetration>
     </value>
     </li>
 
@@ -1559,7 +1559,7 @@
     </value>
     </li>
 
-    <!-- Patch Therizinosaurus : Tools / Verbs -->
+    <!-- Patch Therizinosaurus : Tools -->
 
     <li Class="PatchOperationAttributeSet">
     <xpath>Defs/ThingDef[defName="Therizinosaurus"]/tools/li[linkedBodyPartsGroup="LeftArmClawAttackTool"]</xpath>
@@ -1570,7 +1570,7 @@
     <li Class="PatchOperationAdd">
     <xpath>Defs/ThingDef[defName="Therizinosaurus"]/tools/li[linkedBodyPartsGroup="LeftArmClawAttackTool"]</xpath>
     <value>
-        <armorPenetration>0.227</armorPenetration>
+        <armorPenetration>0.077</armorPenetration>
     </value>
     </li>
 
@@ -1583,7 +1583,7 @@
     <li Class="PatchOperationAdd">
     <xpath>Defs/ThingDef[defName="Therizinosaurus"]/tools/li[linkedBodyPartsGroup="RightArmClawAttackTool"]</xpath>
     <value>
-        <armorPenetration>0.227</armorPenetration>
+        <armorPenetration>0.077</armorPenetration>
     </value>
     </li>
 
@@ -1596,7 +1596,7 @@
     <li Class="PatchOperationAdd">
     <xpath>Defs/ThingDef[defName="Therizinosaurus"]/tools/li[linkedBodyPartsGroup="HeadAttackTool"]</xpath>
     <value>
-        <armorPenetration>0.13</armorPenetration>
+        <armorPenetration>0.133</armorPenetration>
     </value>
     </li>
 
@@ -1626,7 +1626,7 @@
     </value>
     </li>
 
-    <!-- Patch Pachycephalosaurus : Tools / Verbs -->
+    <!-- Patch Pachycephalosaurus : Tools -->
 
     <li Class="PatchOperationAttributeSet">
     <xpath>Defs/ThingDef[defName="Pachycephalosaurus"]/tools/li[linkedBodyPartsGroup="HeadAttackTool"]</xpath>
@@ -1637,7 +1637,7 @@
     <li Class="PatchOperationAdd">
     <xpath>Defs/ThingDef[defName="Pachycephalosaurus"]/tools/li[linkedBodyPartsGroup="HeadAttackTool"]</xpath>
     <value>
-        <armorPenetration>0.13</armorPenetration>
+        <armorPenetration>0.133</armorPenetration>
     </value>
     </li>
 
@@ -1672,7 +1672,7 @@
     </value>
     </li>
 
-    <!-- Patch Stygimoloch : Tools / Verbs -->
+    <!-- Patch Stygimoloch : Tools -->
 
     <li Class="PatchOperationAttributeSet">
     <xpath>Defs/ThingDef[defName="Stygimoloch"]/tools/li[linkedBodyPartsGroup="HeadAttackTool"]</xpath>
@@ -1683,7 +1683,7 @@
     <li Class="PatchOperationAdd">
     <xpath>Defs/ThingDef[defName="Stygimoloch"]/tools/li[linkedBodyPartsGroup="HeadAttackTool"]</xpath>
     <value>
-        <armorPenetration>0.13</armorPenetration>
+        <armorPenetration>0.133</armorPenetration>
     </value>
     </li>
 
@@ -1718,7 +1718,7 @@
     </value>
     </li>
 
-    <!-- Patch Dryosaurus : Tools / Verbs -->
+    <!-- Patch Dryosaurus : Tools -->
 
     <li Class="PatchOperationAttributeSet">
     <xpath>Defs/ThingDef[defName="Dryosaurus"]/tools/li[linkedBodyPartsGroup="HeadAttackTool"]</xpath>
@@ -1729,7 +1729,7 @@
     <li Class="PatchOperationAdd">
     <xpath>Defs/ThingDef[defName="Dryosaurus"]/tools/li[linkedBodyPartsGroup="HeadAttackTool"]</xpath>
     <value>
-        <armorPenetration>0.13</armorPenetration>
+        <armorPenetration>0.133</armorPenetration>
     </value>
     </li>
 
@@ -1759,7 +1759,7 @@
     </value>
     </li>
 
-    <!-- Patch Stegosaurus : Tools / Verbs -->
+    <!-- Patch Stegosaurus : Tools -->
 
     <li Class="PatchOperationAttributeSet">
     <xpath>Defs/ThingDef[defName="Stegosaurus"]/tools/li[linkedBodyPartsGroup="TailAttackTool"]</xpath>
@@ -1770,7 +1770,7 @@
     <li Class="PatchOperationAdd">
     <xpath>Defs/ThingDef[defName="Stegosaurus"]/tools/li[linkedBodyPartsGroup="TailAttackTool"]</xpath>
     <value>
-        <armorPenetration>0.17</armorPenetration>
+        <armorPenetration>0.077</armorPenetration>
     </value>
     </li>
 
@@ -1783,7 +1783,7 @@
     <li Class="PatchOperationAdd">
     <xpath>Defs/ThingDef[defName="Stegosaurus"]/tools/li[linkedBodyPartsGroup="HeadAttackTool"]</xpath>
     <value>
-        <armorPenetration>0.13</armorPenetration>
+        <armorPenetration>0.133</armorPenetration>
     </value>
     </li>
 
@@ -1813,7 +1813,7 @@
     </value>
     </li>
 
-    <!-- Patch Triceratops : Tools / Verbs -->
+    <!-- Patch Triceratops : Tools -->
 
     <li Class="PatchOperationAttributeSet">
     <xpath>Defs/ThingDef[defName="Triceratops"]/tools/li[linkedBodyPartsGroup="HornAttackTool"]</xpath>
@@ -1824,7 +1824,7 @@
     <li Class="PatchOperationAdd">
     <xpath>Defs/ThingDef[defName="Triceratops"]/tools/li[linkedBodyPartsGroup="HornAttackTool"]</xpath>
     <value>
-        <armorPenetration>0.457</armorPenetration>
+        <armorPenetration>0.077</armorPenetration>
     </value>
     </li>
 
@@ -1837,7 +1837,7 @@
     <li Class="PatchOperationAdd">
     <xpath>Defs/ThingDef[defName="Triceratops"]/tools/li[linkedBodyPartsGroup="HeadAttackTool"]</xpath>
     <value>
-        <armorPenetration>0.13</armorPenetration>
+        <armorPenetration>0.133</armorPenetration>
     </value>
     </li>
 
@@ -1867,7 +1867,7 @@
     </value>
     </li>
 
-    <!-- Patch Protoceratops : Tools / Verbs -->
+    <!-- Patch Protoceratops : Tools -->
 
     <li Class="PatchOperationAttributeSet">
     <xpath>Defs/ThingDef[defName="Protoceratops"]/tools/li[linkedBodyPartsGroup="HeadAttackTool"]</xpath>
@@ -1878,7 +1878,7 @@
     <li Class="PatchOperationAdd">
     <xpath>Defs/ThingDef[defName="Protoceratops"]/tools/li[linkedBodyPartsGroup="HeadAttackTool"]</xpath>
     <value>
-        <armorPenetration>0.13</armorPenetration>
+        <armorPenetration>0.133</armorPenetration>
     </value>
     </li>
 
@@ -1908,7 +1908,7 @@
     </value>
     </li>
 
-    <!-- Patch Quetzalcoatlus : Tools / Verbs -->
+    <!-- Patch Quetzalcoatlus : Tools -->
 
     <li Class="PatchOperationAttributeSet">
     <xpath>Defs/ThingDef[defName="Quetzalcoatlus"]/tools/li[linkedBodyPartsGroup="Beak"]</xpath>
@@ -1919,7 +1919,7 @@
     <li Class="PatchOperationAdd">
     <xpath>Defs/ThingDef[defName="Quetzalcoatlus"]/tools/li[linkedBodyPartsGroup="Beak"]</xpath>
     <value>
-        <armorPenetration>0.3</armorPenetration>
+        <armorPenetration>0.17</armorPenetration>
     </value>
     </li>
 
@@ -1949,7 +1949,7 @@
     </value>
     </li>
 
-    <!-- Patch Pteranodon : Tools / Verbs -->
+    <!-- Patch Pteranodon : Tools -->
 
     <li Class="PatchOperationAttributeSet">
     <xpath>Defs/ThingDef[defName="Pteranodon"]/tools/li[linkedBodyPartsGroup="Beak"]</xpath>
@@ -1960,7 +1960,7 @@
     <li Class="PatchOperationAdd">
     <xpath>Defs/ThingDef[defName="Pteranodon"]/tools/li[linkedBodyPartsGroup="Beak"]</xpath>
     <value>
-        <armorPenetration>0.3</armorPenetration>
+        <armorPenetration>0.17</armorPenetration>
     </value>
     </li>
 
