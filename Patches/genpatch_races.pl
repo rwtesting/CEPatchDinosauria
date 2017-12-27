@@ -275,13 +275,17 @@ my %PATCHABLES = (
     },
 );
 
-my $patcher = new RWPatcher::Animals(
-    sourcemod   => $SOURCEMOD,
-    sourcefiles => \@SOURCEFILES,
-    cedata      => \%PATCHABLES,
-) or die("ERR: Failed new RWPatcher::Animals: $!\n");
+my $patcher;
+foreach my $sourcefile (@SOURCEFILES)
+{
+    $patcher = new RWPatcher::Animals(
+        sourcemod  => $SOURCEMOD,
+        sourcefile => $sourcefile,
+        cedata     => \%PATCHABLES,
+    ) or die("ERR: Failed new RWPatcher::Animals: $!\n");
 
-$patcher->generate_patches();
+    $patcher->generate_patches();
+}
 
 exit(0);
 
