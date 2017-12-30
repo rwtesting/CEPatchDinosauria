@@ -2,7 +2,7 @@
 use strict;
 use warnings;
 
-use lib "../../_lib";
+use lib "../../../_lib";
 use RWPatcher::Animals;
 
 #

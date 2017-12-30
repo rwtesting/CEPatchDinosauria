@@ -38,11 +38,6 @@
     </value>
     </li>
 
-    <!-- HACK: temporarily remove stun nodes to prevent CE v0.18.0.2 beta null object error -->
-    <li Class="PatchOperationRemove">
-    <xpath>Defs/ThingDef[defName="TyrannosaurusRex"]/tools/li[linkedBodyPartsGroup="LeftLeg"]/surpriseAttack</xpath>
-    </li>
-
     <li Class="PatchOperationAttributeSet">
     <xpath>Defs/ThingDef[defName="TyrannosaurusRex"]/tools/li[linkedBodyPartsGroup="RightLeg"]</xpath>
         <attribute>Class</attribute>
@@ -54,11 +49,6 @@
     <value>
         <armorPenetration>0.17</armorPenetration>
     </value>
-    </li>
-
-    <!-- HACK: temporarily remove stun nodes to prevent CE v0.18.0.2 beta null object error -->
-    <li Class="PatchOperationRemove">
-    <xpath>Defs/ThingDef[defName="TyrannosaurusRex"]/tools/li[linkedBodyPartsGroup="RightLeg"]/surpriseAttack</xpath>
     </li>
 
     <li Class="PatchOperationAttributeSet">
@@ -115,11 +105,6 @@
     </value>
     </li>
 
-    <!-- HACK: temporarily remove stun nodes to prevent CE v0.18.0.2 beta null object error -->
-    <li Class="PatchOperationRemove">
-    <xpath>Defs/ThingDef[defName="Yutyrannus"]/tools/li[linkedBodyPartsGroup="LeftLeg"]/surpriseAttack</xpath>
-    </li>
-
     <li Class="PatchOperationAttributeSet">
     <xpath>Defs/ThingDef[defName="Yutyrannus"]/tools/li[linkedBodyPartsGroup="RightLeg"]</xpath>
         <attribute>Class</attribute>
@@ -131,11 +116,6 @@
     <value>
         <armorPenetration>0.17</armorPenetration>
     </value>
-    </li>
-
-    <!-- HACK: temporarily remove stun nodes to prevent CE v0.18.0.2 beta null object error -->
-    <li Class="PatchOperationRemove">
-    <xpath>Defs/ThingDef[defName="Yutyrannus"]/tools/li[linkedBodyPartsGroup="RightLeg"]/surpriseAttack</xpath>
     </li>
 
     <li Class="PatchOperationAttributeSet">
@@ -192,11 +172,6 @@
     </value>
     </li>
 
-    <!-- HACK: temporarily remove stun nodes to prevent CE v0.18.0.2 beta null object error -->
-    <li Class="PatchOperationRemove">
-    <xpath>Defs/ThingDef[defName="Carnotaurus"]/tools/li[linkedBodyPartsGroup="LeftLeg"]/surpriseAttack</xpath>
-    </li>
-
     <li Class="PatchOperationAttributeSet">
     <xpath>Defs/ThingDef[defName="Carnotaurus"]/tools/li[linkedBodyPartsGroup="RightLeg"]</xpath>
         <attribute>Class</attribute>
@@ -208,11 +183,6 @@
     <value>
         <armorPenetration>0.17</armorPenetration>
     </value>
-    </li>
-
-    <!-- HACK: temporarily remove stun nodes to prevent CE v0.18.0.2 beta null object error -->
-    <li Class="PatchOperationRemove">
-    <xpath>Defs/ThingDef[defName="Carnotaurus"]/tools/li[linkedBodyPartsGroup="RightLeg"]/surpriseAttack</xpath>
     </li>
 
     <li Class="PatchOperationAttributeSet">
@@ -269,11 +239,6 @@
     </value>
     </li>
 
-    <!-- HACK: temporarily remove stun nodes to prevent CE v0.18.0.2 beta null object error -->
-    <li Class="PatchOperationRemove">
-    <xpath>Defs/ThingDef[defName="Allosaurus"]/tools/li[linkedBodyPartsGroup="LeftLeg"]/surpriseAttack</xpath>
-    </li>
-
     <li Class="PatchOperationAttributeSet">
     <xpath>Defs/ThingDef[defName="Allosaurus"]/tools/li[linkedBodyPartsGroup="RightLeg"]</xpath>
         <attribute>Class</attribute>
@@ -285,11 +250,6 @@
     <value>
         <armorPenetration>0.17</armorPenetration>
     </value>
-    </li>
-
-    <!-- HACK: temporarily remove stun nodes to prevent CE v0.18.0.2 beta null object error -->
-    <li Class="PatchOperationRemove">
-    <xpath>Defs/ThingDef[defName="Allosaurus"]/tools/li[linkedBodyPartsGroup="RightLeg"]/surpriseAttack</xpath>
     </li>
 
     <li Class="PatchOperationAttributeSet">
@@ -346,11 +306,6 @@
     </value>
     </li>
 
-    <!-- HACK: temporarily remove stun nodes to prevent CE v0.18.0.2 beta null object error -->
-    <li Class="PatchOperationRemove">
-    <xpath>Defs/ThingDef[defName="Spinosaurus"]/tools/li[linkedBodyPartsGroup="LeftLeg"]/surpriseAttack</xpath>
-    </li>
-
     <li Class="PatchOperationAttributeSet">
     <xpath>Defs/ThingDef[defName="Spinosaurus"]/tools/li[linkedBodyPartsGroup="RightLeg"]</xpath>
         <attribute>Class</attribute>
@@ -362,11 +317,6 @@
     <value>
         <armorPenetration>0.17</armorPenetration>
     </value>
-    </li>
-
-    <!-- HACK: temporarily remove stun nodes to prevent CE v0.18.0.2 beta null object error -->
-    <li Class="PatchOperationRemove">
-    <xpath>Defs/ThingDef[defName="Spinosaurus"]/tools/li[linkedBodyPartsGroup="RightLeg"]/surpriseAttack</xpath>
     </li>
 
     <li Class="PatchOperationAttributeSet">
@@ -423,11 +373,6 @@
     </value>
     </li>
 
-    <!-- HACK: temporarily remove stun nodes to prevent CE v0.18.0.2 beta null object error -->
-    <li Class="PatchOperationRemove">
-    <xpath>Defs/ThingDef[defName="Baryonyx"]/tools/li[linkedBodyPartsGroup="LeftLeg"]/surpriseAttack</xpath>
-    </li>
-
     <li Class="PatchOperationAttributeSet">
     <xpath>Defs/ThingDef[defName="Baryonyx"]/tools/li[linkedBodyPartsGroup="RightLeg"]</xpath>
         <attribute>Class</attribute>
@@ -439,11 +384,6 @@
     <value>
         <armorPenetration>0.17</armorPenetration>
     </value>
-    </li>
-
-    <!-- HACK: temporarily remove stun nodes to prevent CE v0.18.0.2 beta null object error -->
-    <li Class="PatchOperationRemove">
-    <xpath>Defs/ThingDef[defName="Baryonyx"]/tools/li[linkedBodyPartsGroup="RightLeg"]/surpriseAttack</xpath>
     </li>
 
     <li Class="PatchOperationAttributeSet">
@@ -513,11 +453,6 @@
     </value>
     </li>
 
-    <!-- HACK: temporarily remove stun nodes to prevent CE v0.18.0.2 beta null object error -->
-    <li Class="PatchOperationRemove">
-    <xpath>Defs/ThingDef[defName="Ankylosaurus"]/tools/li[linkedBodyPartsGroup="HeadAttackTool"]/surpriseAttack</xpath>
-    </li>
-
     <!-- Patch Ankylosaurus : Stats -->
 
     <!-- Patch statBases last so that we know all previous sequence entries succeeded.
@@ -572,11 +507,6 @@
     </value>
     </li>
 
-    <!-- HACK: temporarily remove stun nodes to prevent CE v0.18.0.2 beta null object error -->
-    <li Class="PatchOperationRemove">
-    <xpath>Defs/ThingDef[defName="Minmi"]/tools/li[linkedBodyPartsGroup="HeadAttackTool"]/surpriseAttack</xpath>
-    </li>
-
     <!-- Patch Minmi : Stats -->
 
     <!-- Patch statBases last so that we know all previous sequence entries succeeded.
@@ -616,11 +546,6 @@
     <value>
         <armorPenetration>0.17</armorPenetration>
     </value>
-    </li>
-
-    <!-- HACK: temporarily remove stun nodes to prevent CE v0.18.0.2 beta null object error -->
-    <li Class="PatchOperationRemove">
-    <xpath>Defs/ThingDef[defName="Brachiosaurus"]/tools/li[linkedBodyPartsGroup="TailAttackTool"]/surpriseAttack</xpath>
     </li>
 
     <li Class="PatchOperationAttributeSet">
@@ -690,11 +615,6 @@
     </value>
     </li>
 
-    <!-- HACK: temporarily remove stun nodes to prevent CE v0.18.0.2 beta null object error -->
-    <li Class="PatchOperationRemove">
-    <xpath>Defs/ThingDef[defName="Brontosaurus"]/tools/li[linkedBodyPartsGroup="TailAttackTool"]/surpriseAttack</xpath>
-    </li>
-
     <li Class="PatchOperationAttributeSet">
     <xpath>Defs/ThingDef[defName="Brontosaurus"]/tools/li[linkedBodyPartsGroup="FrontLeftLeg"]</xpath>
         <attribute>Class</attribute>
@@ -762,11 +682,6 @@
     </value>
     </li>
 
-    <!-- HACK: temporarily remove stun nodes to prevent CE v0.18.0.2 beta null object error -->
-    <li Class="PatchOperationRemove">
-    <xpath>Defs/ThingDef[defName="Diplodocus"]/tools/li[linkedBodyPartsGroup="TailAttackTool"]/surpriseAttack</xpath>
-    </li>
-
     <li Class="PatchOperationAttributeSet">
     <xpath>Defs/ThingDef[defName="Diplodocus"]/tools/li[linkedBodyPartsGroup="FrontLeftLeg"]</xpath>
         <attribute>Class</attribute>
@@ -832,11 +747,6 @@
     <value>
         <armorPenetration>0.17</armorPenetration>
     </value>
-    </li>
-
-    <!-- HACK: temporarily remove stun nodes to prevent CE v0.18.0.2 beta null object error -->
-    <li Class="PatchOperationRemove">
-    <xpath>Defs/ThingDef[defName="Magyarosaurus"]/tools/li[linkedBodyPartsGroup="TailAttackTool"]/surpriseAttack</xpath>
     </li>
 
     <li Class="PatchOperationAttributeSet">
@@ -1241,11 +1151,6 @@
     </value>
     </li>
 
-    <!-- HACK: temporarily remove stun nodes to prevent CE v0.18.0.2 beta null object error -->
-    <li Class="PatchOperationRemove">
-    <xpath>Defs/ThingDef[defName="Gallimimus"]/tools/li[linkedBodyPartsGroup="LeftLeg"]/surpriseAttack</xpath>
-    </li>
-
     <li Class="PatchOperationAttributeSet">
     <xpath>Defs/ThingDef[defName="Gallimimus"]/tools/li[linkedBodyPartsGroup="RightLeg"]</xpath>
         <attribute>Class</attribute>
@@ -1257,11 +1162,6 @@
     <value>
         <armorPenetration>0.17</armorPenetration>
     </value>
-    </li>
-
-    <!-- HACK: temporarily remove stun nodes to prevent CE v0.18.0.2 beta null object error -->
-    <li Class="PatchOperationRemove">
-    <xpath>Defs/ThingDef[defName="Gallimimus"]/tools/li[linkedBodyPartsGroup="RightLeg"]/surpriseAttack</xpath>
     </li>
 
     <!-- Patch Gallimimus : Stats -->
@@ -1305,11 +1205,6 @@
     </value>
     </li>
 
-    <!-- HACK: temporarily remove stun nodes to prevent CE v0.18.0.2 beta null object error -->
-    <li Class="PatchOperationRemove">
-    <xpath>Defs/ThingDef[defName="Gigantoraptor"]/tools/li[linkedBodyPartsGroup="LeftLeg"]/surpriseAttack</xpath>
-    </li>
-
     <li Class="PatchOperationAttributeSet">
     <xpath>Defs/ThingDef[defName="Gigantoraptor"]/tools/li[linkedBodyPartsGroup="RightLeg"]</xpath>
         <attribute>Class</attribute>
@@ -1321,11 +1216,6 @@
     <value>
         <armorPenetration>0.17</armorPenetration>
     </value>
-    </li>
-
-    <!-- HACK: temporarily remove stun nodes to prevent CE v0.18.0.2 beta null object error -->
-    <li Class="PatchOperationRemove">
-    <xpath>Defs/ThingDef[defName="Gigantoraptor"]/tools/li[linkedBodyPartsGroup="RightLeg"]/surpriseAttack</xpath>
     </li>
 
     <!-- Patch Gigantoraptor : Stats -->
@@ -1369,11 +1259,6 @@
     </value>
     </li>
 
-    <!-- HACK: temporarily remove stun nodes to prevent CE v0.18.0.2 beta null object error -->
-    <li Class="PatchOperationRemove">
-    <xpath>Defs/ThingDef[defName="Iguanodon"]/tools/li[linkedBodyPartsGroup="HeadAttackTool"]/surpriseAttack</xpath>
-    </li>
-
     <!-- Patch Iguanodon : Stats -->
 
     <!-- Patch statBases last so that we know all previous sequence entries succeeded.
@@ -1415,11 +1300,6 @@
     </value>
     </li>
 
-    <!-- HACK: temporarily remove stun nodes to prevent CE v0.18.0.2 beta null object error -->
-    <li Class="PatchOperationRemove">
-    <xpath>Defs/ThingDef[defName="Parasaur"]/tools/li[linkedBodyPartsGroup="HeadAttackTool"]/surpriseAttack</xpath>
-    </li>
-
     <!-- Patch Parasaur : Stats -->
 
     <!-- Patch statBases last so that we know all previous sequence entries succeeded.
@@ -1459,11 +1339,6 @@
     <value>
         <armorPenetration>0.133</armorPenetration>
     </value>
-    </li>
-
-    <!-- HACK: temporarily remove stun nodes to prevent CE v0.18.0.2 beta null object error -->
-    <li Class="PatchOperationRemove">
-    <xpath>Defs/ThingDef[defName="Corythosaurus"]/tools/li[linkedBodyPartsGroup="HeadAttackTool"]/surpriseAttack</xpath>
     </li>
 
     <!-- Patch Corythosaurus : Stats -->
@@ -1641,11 +1516,6 @@
     </value>
     </li>
 
-    <!-- HACK: temporarily remove stun nodes to prevent CE v0.18.0.2 beta null object error -->
-    <li Class="PatchOperationRemove">
-    <xpath>Defs/ThingDef[defName="Pachycephalosaurus"]/tools/li[linkedBodyPartsGroup="HeadAttackTool"]/surpriseAttack</xpath>
-    </li>
-
     <!-- Patch Pachycephalosaurus : Stats -->
 
     <!-- Patch statBases last so that we know all previous sequence entries succeeded.
@@ -1685,11 +1555,6 @@
     <value>
         <armorPenetration>0.133</armorPenetration>
     </value>
-    </li>
-
-    <!-- HACK: temporarily remove stun nodes to prevent CE v0.18.0.2 beta null object error -->
-    <li Class="PatchOperationRemove">
-    <xpath>Defs/ThingDef[defName="Stygimoloch"]/tools/li[linkedBodyPartsGroup="HeadAttackTool"]/surpriseAttack</xpath>
     </li>
 
     <!-- Patch Stygimoloch : Stats -->
