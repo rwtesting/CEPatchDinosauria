@@ -3,7 +3,7 @@ use strict;
 use warnings;
 
 use lib $ENV{RWPATCHER_LIB};
-use RWPatcher::Animals;
+use RWPatcher::Races::Animals;
 
 #
 # Generate patch to make Dinosauria races compatible with Combat Extended, b18.
@@ -278,12 +278,12 @@ my %PATCHABLES = (
 my $patcher;
 foreach my $sourcefile (@SOURCEFILES)
 {
-    $patcher = new RWPatcher::Animals(
+    $patcher = new RWPatcher::Races::Animals(
         sourcemod  => $SOURCEMOD,
         sourcefile => $sourcefile,
         cedata     => \%PATCHABLES,
 	expected_parents => [ "AnimalThingBase" ],
-    ) or die("ERR: Failed new RWPatcher::Animals: $!\n");
+    ) or die("ERR: Failed new RWPatcher::Races::Animals: $!\n");
 
     $patcher->generate_patches();
 }
